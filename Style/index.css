@@ -1,4 +1,67 @@
 /* Página HOME */
+
+@font-face{
+    font-family: "Aller bold";
+    src: url(/Componentes/assets/fonts/aller_bd-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller bold italico";
+    src: url(/Componentes/assets/fonts/aller_bdit-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller italico";
+    src: url(/Componentes/assets/fonts/aller_it-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller light";
+    src: url(/Componentes/assets/fonts/aller_lt-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller light italico";
+    src: url(/Componentes/assets/fonts/aller_ltit-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller regular";
+    src: url(/Componentes/assets/fonts/aller_rg-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap bold";
+    src: url(/Componentes/assets/fonts/asap-bold-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap bold italico";
+    src: url(/Componentes/assets/fonts/asap-bolditalic-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap italico";
+    src: url(/Componentes/assets/fonts/asap-italic-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap medio";
+    src: url(/Componentes/assets/fonts/asap-medium-webfont.woff) format(woff);
+}
+
+
+@font-face{
+    font-family: "Asap regular";
+    src: url(/Componentes/assets/fonts/asap-regular-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap semibold";
+    src: url(/Componentes/assets/fonts/asap-semibold-webfont.woff) format(woff);
+}
+
+
 *{
     margin: 0;
     padding: 0;
