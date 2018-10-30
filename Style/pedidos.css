@@ -1,0 +1,107 @@
+/* Página PEDIDOS */
+
+@font-face{
+    font-family: "Aller bold";
+    src: url(/Componentes/assets/fonts/aller_bd-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller bold italico";
+    src: url(/Componentes/assets/fonts/aller_bdit-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller italico";
+    src: url(/Componentes/assets/fonts/aller_it-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller light";
+    src: url(/Componentes/assets/fonts/aller_lt-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller light italico";
+    src: url(/Componentes/assets/fonts/aller_ltit-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Aller regular";
+    src: url(/Componentes/assets/fonts/aller_rg-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap bold";
+    src: url(/Componentes/assets/fonts/asap-bold-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap bold italico";
+    src: url(/Componentes/assets/fonts/asap-bolditalic-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap italico";
+    src: url(/Componentes/assets/fonts/asap-italic-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap medio";
+    src: url(/Componentes/assets/fonts/asap-medium-webfont.woff) format(woff);
+}
+
+
+@font-face{
+    font-family: "Asap regular";
+    src: url(/Componentes/assets/fonts/asap-regular-webfont.woff) format(woff);
+}
+
+@font-face{
+    font-family: "Asap semibold";
+    src: url(/Componentes/assets/fonts/asap-semibold-webfont.woff) format(woff);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: static;
+}
+.header-home{
+    width: 100%;
+    height: 100vh;
+}
+.header-home .titulo{
+    width: 100%;
+    height: 266px;
+    background-color: blue;
+}
+.header-home .titulo > h1{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+}
+.header-home .titulo > p{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+.nav-home{
+    width: 100%;
+    height: 70px;
+    background-color: aquamarine;
+    position: relative;
+    top: 0;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: violet;
+}
+.conteudo{
+    width: 100%;
+    background-color: red;
+}
