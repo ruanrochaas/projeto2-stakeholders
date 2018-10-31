@@ -1,0 +1,142 @@
+/* FONTES */
+@font-face{
+    font-family: "Aller bold";
+    src: url(../Componentes/assets/fonts/aller_bd-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Aller bold italico";
+    src: url(../Componentes/assets/fonts/aller_bdit-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Aller italico";
+    src: url(../Componentes/assets/fonts/aller_it-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Aller light";
+    src: url(../Componentes/assets/fonts/aller_lt-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Aller light italico";
+    src: url(../Componentes/assets/fonts/aller_ltit-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Aller regular";
+    src: url(../Componentes/assets/fonts/aller_rg-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Asap bold";
+    src: url(../Componentes/assets/fonts/asap-bold-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Asap bold italico";
+    src: url(../Componentes/assets/fonts/asap-bolditalic-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Asap italico";
+    src: url(../Componentes/assets/fonts/asap-italic-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Asap medio";
+    src: url(../Componentes/assets/fonts/asap-medium-webfont.woff) format('woff');
+}
+
+
+@font-face{
+    font-family: "Asap regular";
+    src: url(../Componentes/assets/fonts/asap-regular-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: "Asap semibold";
+    src: url(../Componentes/assets/fonts/asap-semibold-webfont.woff) format('woff');
+}
+
+/* Página SCRIPT */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: static;
+}
+.header-script{
+    width: 100%;
+    height: 300px;
+    background-color: burlywood;
+}
+.nav-script{
+    width: 100%;
+    height: 70px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 0;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: violet;
+}
+.conteudo{
+    width: 100%;
+    background-color: darkgray;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conteudo .card-script{
+    width: 900px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    margin: 30px;
+    box-shadow: 0 0 20px rgb(70, 70, 70);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conteudo-card p, .conteudo-card ul{
+    margin-top: 7px;
+}
+.conteudo .card-script .conteudo-card{
+    width: 750px;
+    margin: 30px 0px;
+}
+.titulo-script{
+    font-family: "Aller bold";
+}
+.categorias-script{
+    font-family: "Aller regular";
+}
+.descricao-script{
+    font-family: "Aller regular";
+}
+.engajamento-script{
+    font-family: "Aller bold";
+}
+.textos-card{
+    margin-bottom: 20px;
+}
+.botoes-script li{
+    list-style-type: none;
+    float: left;
+    margin-right: 5px;
+}
+.botoes-script li a{
+    text-decoration: none;
+    font-family: "Aller regular";
+    color: white;
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
