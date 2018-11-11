@@ -4,52 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./Style/entrar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./Style/cadastro.css">
     <title>Stakeholders</title>
 </head>
 <body>
-    <header class="script-header">
-        <nav class="script-header-nav">
-            <a href="./index.html"><img class="script-header-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+    <header class="cadastrar-header">
+        <nav class="cadastrar-header-nav">
+            <a href="./index.html"><img class="cadastrar-header-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
             
-            <div class="script-header-nav-conteudo-navbar-links">
+            <div class="cadastrar-header-nav-conteudo-navbar-links">
                 <a href="">Explorar</a>
                 <a href="">Pedidos</a>
             </div>
 
-            <div class="script-header-nav-conteudo-navbar-pesquisa">
+            <div class="cadastrar-header-nav-conteudo-navbar-pesquisa">
                 <input placeholder="Pesquisar" class="pesquisa"> 
                 <button class="botao"> IR </button>
             </div>
                 
-            <div class="script-header-nav-conteudo-navbar-login">
+            <div class="cadastrar-header-nav-conteudo-navbar-login">
                 <a href="./entrar.html">Entrar</a>
                 <a href="./cadastro.html">Cadastrar-se</a>
             </div>
         </nav>
-        <div class="script-header-titulo">
-            <h2>Entrar</h2>
-            <p>Que bom que voltou, entre para ver seus scripts salvos e muito mais</p>
+        <div class="cadastrar-header-titulo">
+            <h2>Cadastrar</h2>
+            <p>Legal! Aqui você terá que preencher alguns dados para sabermos<br>quem é você e mostrarmos temas de seu interesse.</p>
         </div>
     </header>
-    <div class="entrar">
-        <div class="card-entrar">
+    <div class="cadastrar">
+        <div class="card-cadastrar">
             <form>
                 <div>
                     <a class="botao-facebook">Conectar usando facebook </a>
                     <a class="botao-gmail">Conectar usando Gmail </a>
                     <hr>
+                    <p class="titulo">Nome completo</p>
+                    <input type="text" placeholder="Seu nome completo" class="input">
                     <p class="titulo">Email</p>
                     <input type="text" placeholder="stakeholder@email.com" class="input">
                     <!-- <p class="dados-invalidos">Email incorreto</p> -->
-                </div>
-                <div>
                     <p class="titulo">Senha</p>
                     <input type="password" placeholder="••••••••••" class="input">
                     <!-- <p class="dados-invalidos">Senha incorreta</p> -->
+                    <p class="titulo">Confirme a senha</p>
+                    <input type="password" placeholder="••••••••••" class="input">
+                    <!-- <p class="dados-invalidos">Senha incorreta</p> -->
+                    <p class="titulo">Você quer contribuir desenvolvendo scripts na plataforma?</p>
+                    <input class="radio" type="radio" name="opcoes" value="sim">Sim<br><!-- Não sei fazer isso ainda. -->
+                    <input class="radio" type="radio" name="opcoes" value="nao" checked>Não<br>
+                    <p class="titulo">Escolha algumas categorias de seu interesse.</p>
+                    <input class="checkbox" type="checkbox" name="categorias" value="Universidades">Universidades<br><!-- Não sei fazer isso ainda. -->
+                    <input class="checkbox" type="checkbox" name="categorias" value="Compras">Compras<br>
+                    <input class="checkbox" type="checkbox" name="categorias" value="Viagens">Viagens<br>
+                    
+                    <div class="botoes-cadastro">
+                        <button class="botao-cadastrar">Cadastrar</button>
+                        <button class="botao-cancelar">Cancelar</button>
+                    </div>
                 </div>
-                <a class="esqueciasenha" href="">Esqueci minha senha</a>
-                <button class="botao-entrar">Entrar</button>
             </form>
         </div>
     </div>
@@ -86,5 +100,6 @@
             <span>©2018 Todos os direitos reservados</span>
         </div>
     </footer>
+    <script src="./Scripts/cadastro.js"></script>
 </body>
 </html>

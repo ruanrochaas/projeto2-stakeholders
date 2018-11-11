@@ -99,7 +99,7 @@ body{
 }
 .script-header > .script-header-titulo > p{
     color: white;
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Aller-regular';
     text-align: center;
 }
@@ -117,10 +117,6 @@ body{
 
 .script-header-nav-logo{
     height: 70px;
-}
-
-.script-header-nav-logo:hover{
-    cursor: pointer;
 }
 
 .script-header-nav-conteudo-navbar-links>a{

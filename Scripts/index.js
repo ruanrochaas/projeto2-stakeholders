@@ -74,7 +74,8 @@ function formarBotCarregarMais(id){
     let textoBot3 = document.createTextNode("Carregar Mais");
 
     bot3.addEventListener("click", ()=>{
-        alert("vra");
+        event.preventDefault();
+        alert('Ainda não implementado.');
     });
 
     bot3.classList.add("carregar-mais");
@@ -124,19 +125,23 @@ function cardsScripts(objeto, num) {
 
     if (num == 0) {
         bot1.addEventListener("click", ()=>{
-            alert("vra!")
+            localStorage.setItem("verScriptId",String(objeto.id));
+            window.location.href='./script.html';
         });
     
         bot2.addEventListener("click", ()=>{
-            alert("vra!")
+            event.preventDefault();
+            alert('Ainda não implementado.');
         });
     } else {
         bot1.addEventListener("click", ()=>{
-            alert("vra!")
+            event.preventDefault();
+            alert('Ainda não implementado.');
         });
     
         bot2.addEventListener("click", ()=>{
-            alert("vra!")
+            event.preventDefault();
+            alert('Ainda não implementado.');
         });
     }
 

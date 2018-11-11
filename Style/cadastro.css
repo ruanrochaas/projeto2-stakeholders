@@ -7,6 +7,11 @@
 }
 
 @font-face{
+    font-family: 'Aller-bold';
+    src: url(../Componentes/assets/fonts/aller_bd-webfont.woff ) format('woff');
+}
+
+@font-face{
     font-family: 'Aller-bold-italico';
     src: url(../Componentes/assets/fonts/aller_bdit-webfont.woff) format('woff');
 }
@@ -74,10 +79,10 @@ body{
 }
 
 /* HEADER =============================================================== */
-.script-header{
+.cadastrar-header{
     height: 266px;
     margin-top: 70px;
-    background-image: url("../Componentes/assets/images/header3.png");
+    background-image: url("../Componentes/assets/images/header2.png");
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
@@ -86,35 +91,35 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.script-header > .script-header-titulo > h2{
+.cadastrar-header > .cadastrar-header-titulo > h2{
     color: white;
     font-size: 60px;
     font-family: 'Aller-bold';
     text-align: center;
 }
-.script-header > .script-header-titulo > p{
+.cadastrar-header > .cadastrar-header-titulo > p{
     color: white;
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Aller-regular';
     text-align: center;
 }
-.script-header-nav{
+.cadastrar-header-nav{
     width: 100%;
     height: 70px;
     position: absolute;
     top: 0;
-    background: linear-gradient(90deg, #48c0b6, #215caa);
+    background: linear-gradient(90deg, #7a60c5, #215caa);
     box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.25);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.script-header-nav-logo{
+.cadastrar-header-nav-logo{
     height: 70px;
 }
 
-.script-header-nav-conteudo-navbar-links>a{
+.cadastrar-header-nav-conteudo-navbar-links>a{
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -125,13 +130,13 @@ body{
     font-family: "Aller-regular"; 
 }
 
-.script-header-nav-conteudo-navbar-links>a:hover{
+.cadastrar-header-nav-conteudo-navbar-links>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
 }
 
-.script-header-nav-conteudo-navbar-login>a{
+.cadastrar-header-nav-conteudo-navbar-login>a{
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -142,14 +147,14 @@ body{
     font-family: "Aller-regular"; 
 }
 
-.script-header-nav-conteudo-navbar-login>a:hover{
+.cadastrar-header-nav-conteudo-navbar-login>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
     
 }
 
-.script-header-nav-conteudo-navbar-pesquisa > .pesquisa {
+.cadastrar-header-nav-conteudo-navbar-pesquisa > .pesquisa {
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -159,7 +164,7 @@ body{
     font-family: "Aller-regular";                
 }
 
-.script-header-nav-conteudo-navbar-pesquisa > .botao{
+.cadastrar-header-nav-conteudo-navbar-pesquisa > .botao{
     border-radius: 50px;
     padding: 10px 13px;
     border: 2px solid white;
@@ -172,57 +177,161 @@ body{
 
 /* CARD ================================================================= */
 
-.script-conteudo{
+.cadastrar{
     width: 100%;
 }
-.script-conteudo > .card-script{
-    width: 900px;
+.cadastrar > .card-cadastrar{
+    width: 67%;
     background-color: rgb(245, 245, 245);
     border-radius: 20px;
     margin: 60px auto;
     box-shadow: 0 0 20px rgb(70, 70, 70);
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
 }
-.script-conteudo-card p{
-    margin-top: 20px;
-}
-.script-conteudo-card ul{
-    margin-top: 40px;
-}
-.script-conteudo .card-script .script-conteudo-card{
-    width: 800px;
-    margin: 30px 0px;
-}
-.titulo-script, .engajamento-script{
-    font-family: "Aller-bold";
-}
-.categorias-script, .descricao-script, .criador-script{
-    font-family: "Aller-regular";
-}
-.textos-card{
-    margin-bottom: 20px;
-}
-.botoes-script li{
-    list-style-type: none;
-    float: left;
-    margin-right: 5px;
-}
-.botoes-script li a{
-    text-decoration: none;
-    font-family: "Aller-regular";
-    color: white;
-    background: linear-gradient(90deg, #48c0b6, #215caa);
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin: 5px;
+
+.botao-facebook{
     display: block;
+    width: 90%;
+    background-color: rgb(22, 89, 170);
+    border: rgb(22, 89, 170);
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: white;
+    text-align: center;
 }
-.botoes-script li a:hover{
-    transform: scale(1.1);
+
+.botao-facebook:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 300ms;
+    cursor: pointer;
 }
+
+.botao-gmail{
+    display: block;
+    width: 90%;
+    background-color: rgb(255, 63, 34);
+    border: rgb(255, 63, 34);
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: white;
+    text-align: center;
+}
+
+.botao-gmail:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+hr{
+    background-color: rgba(200, 200, 200, 0.5);
+    height: 0.5px;
+    margin: 10px;
+}
+
+
+.titulo{
+    font-family: aller-regular
+}
+
+.input{
+    display: block;
+    width: 90%;
+    background-color: white;
+    border: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: black;
+}
+
+.dados-invalidos{
+    font-family: aller-regular;
+    color: red;
+    margin: 10px 0; 
+}
+
+.esqueciasenha{
+    font-family: aller-regular;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.botoes-cadastro{
+    text-align: center;
+}
+
+.botao-cadastrar{
+    display: inline-block;
+    background: linear-gradient(90deg, #7a60c5, #215caa);
+    border: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+}
+
+.botao-cadastrar:hover{
+    background: white;
+    color: black;
+    transition: 300ms;
+}
+
+.botao-cancelar{
+    display: inline-block;
+    color: #215caa;
+    background: rgb(245, 245, 245);
+    border: 2px solid #215caa;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.botao-cancelar:hover{
+    border: 2px solid rgb(245, 245, 245);
+    background: linear-gradient(90deg, #7a60c5, #215caa);
+    color: white;
+    transition: 300ms;
+}
+
+
+.voltar{
+    display: block;
+    border: 3px solid #232323;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 40px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+}
+
+.voltar:hover{
+    background-color: white;
+    transition: 300ms;
+    cursor: pointer;
+}
+    
+
+
 
 /* FOOTER =============================================================== */
 .script-footer{

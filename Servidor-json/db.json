@@ -1,86 +1,126 @@
 {
-    
-    "usuarios": [
+  "dados": [
+    {
+      "ultimoIdUsuario": "1",
+      "id": 0
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 0,
+      "nome": "Modelo",
+      "email": "",
+      "senha": "",
+      "desenvolvedor": false,
+      "foto": "",
+      "categoriasFav": [],
+      "bibliotecaIdScripts": [],
+      "listaIdPedidosCriados": [],
+      "qtdPedidosCriados": 0,
+      "listaIdScriptsCriados": [],
+      "qtdScriptsCriados": 0,
+      "qtdScriptsCriadosMais10Gosteis": 0,
+      "emblemas": [],
+      "qtdComentarios": 0
+    },
+    {
+      "id": "1",
+      "nome": "Ruan Rocha",
+      "email": "ruansouza@gmail.com",
+      "senha": "123",
+      "desenvolvedor": "true",
+      "foto": "",
+      "categoriasFav[]": [
+        "Universidades",
+        "Compras",
+        "Viagens"
+      ],
+      "bibliotecaIdScripts[]": [
+        "",
+        ""
+      ],
+      "listaIdPedidosCriados[]": [
+        "",
+        ""
+      ],
+      "qtdPedidosCriados": "0",
+      "listaIdScriptsCriados[]": [
+        "",
+        ""
+      ],
+      "qtdScriptsCriados": "0",
+      "qtdScriptsCriadosMais10Gosteis": "0",
+      "emblemas[]": [
+        "",
+        ""
+      ],
+      "qtdComentarios": "0"
+    }
+  ],
+  "scripts": [
+    {
+      "id": 0,
+      "titulo": "Modelo",
+      "autor": "",
+      "complementoUrl": "",
+      "idAutor": "",
+      "dataCria": "",
+      "categorias": [
+        "valor teste"
+      ],
+      "descricao": "valor teste",
+      "gosteis": 0,
+      "idQuemGostou": [],
+      "foiDenunciado": false,
+      "denuncia": [
         {
-            "id": 0,
-            "nome": "Modelo",
-            "email": "",
-            "senha": "",
-            "desenvolvedor": false,
-            "foto": "",
-            "categoriasFav": [],
-            "bibliotecaIdScripts": [],
-            "listaIdPedidosCriados": [],
-            "qtdPedidosCriados": 0,
-            "listaIdScriptsCriados": [],
-            "qtdScriptsCriados": 0,
-            "qtdScriptsCriadosMais10Gosteis": 0,
-            "emblemas": [],
-            "qtdComentarios": 0
+          "idUsuario": 0,
+          "descricao": ""
         }
-    ],
-
-    "scripts": [
+      ],
+      "comentarios": [
         {
-            "id": 0,
-            "titulo": "Modelo",
-            "autor": "",
-            "idAutor": "",
-            "dataCria": "",
-            "categorias": ["valor teste"],
-            "descricao": "valor teste",
-            "gosteis": 0,
-            "idQuemGostou": [],
-            "foiDenunciado": false,
-            "denuncia": [
-                {
-                    "idUsuario": 0,
-                    "descricao": ""
-                }
-            ],
-            "comentarios": [
-                {
-                    "idUsuario": 0,
-                    "texto": ""
-                }
-            ]
+          "idUsuario": 0,
+          "texto": ""
         }
-    ],
-
-    "pedidos": [
+      ]
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "titulo": "Modelo",
+      "autor": "",
+      "idAutor": "",
+      "dataCria": "",
+      "categorias": [
+        "valor teste"
+      ],
+      "url": "",
+      "descricao": "valor teste",
+      "status": "",
+      "gosteis": 0,
+      "idQuemGostou": [],
+      "foiDenunciado": false,
+      "denuncia": [
         {
-            "id": 1,
-            "titulo": "Modelo",
-            "autor": "",
-            "idAutor": "",
-            "dataCria": "",
-            "categorias": ["valor teste"],
-            "url": "",
-            "descricao": "valor teste",
-            "status": "",
-            "gosteis": 0,
-            "idQuemGostou": [],
-            "foiDenunciado": false,
-            "denuncia": [
-                {
-                    "idUsuario": 0,
-                    "descricao": ""
-                }
-            ],
-            "comentarios": [
-                {
-                    "idUsuario": 0,
-                    "texto": ""
-                }
-            ]
+          "idUsuario": 0,
+          "descricao": ""
         }
-    ],
-
-    "emblemas": [
+      ],
+      "comentarios": [
         {
-            "id": 0,
-            "nome": "Modelo",
-            "foto": ""
+          "idUsuario": 0,
+          "texto": ""
         }
-    ]
+      ]
+    }
+  ],
+  "emblemas": [
+    {
+      "id": 0,
+      "nome": "Modelo",
+      "foto": ""
+    }
+  ]
 }
