@@ -205,6 +205,8 @@ body{
     transform: scale(1.1);
     width: 395px;
     height: 95px;
+    cursor: pointer;
+
 
 }
 
@@ -234,6 +236,8 @@ body{
     transform: scale(1.1);
     width: 395px;
     height: 95px;
+    cursor: pointer;
+
 }
 .botao-todos-pedidos{
     border: none;
@@ -262,6 +266,8 @@ body{
     transform: scale(1.1);
     width: 395px;
     height: 95px;
+    cursor: pointer;
+
 }
 /* SEÇÃO FOOTER =============================================================== */
 
