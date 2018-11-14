@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./Style/entrar.css">
     <title>Stakeholders</title>
 </head>
@@ -40,13 +41,13 @@
                     <a class="botao-gmail">Conectar usando Gmail </a>
                     <hr>
                     <p class="titulo">Email</p>
-                    <input type="text" placeholder="stakeholder@email.com" class="input">
-                    <!-- <p class="dados-invalidos">Email incorreto</p> -->
+                    <input type="text" placeholder="stakeholder@email.com" class="input" id="email">
+                    <p class="dados-invalidos invisivel"></p>
                 </div>
                 <div>
                     <p class="titulo">Senha</p>
-                    <input type="password" placeholder="••••••••••" class="input">
-                    <!-- <p class="dados-invalidos">Senha incorreta</p> -->
+                    <input type="password" placeholder="••••••••••" class="input" id="senha">
+                    <p class="dados-invalidos invisivel"></p>
                 </div>
                 <a class="esqueciasenha" href="">Esqueci minha senha</a>
                 <button class="botao-entrar">Entrar</button>
@@ -86,5 +87,6 @@
             <span>©2018 Todos os direitos reservados</span>
         </div>
     </footer>
+    <script src="./Scripts/entrar.js"></script>
 </body>
 </html>

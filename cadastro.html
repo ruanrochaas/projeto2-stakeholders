@@ -11,19 +11,21 @@
 <body>
     <header class="cadastrar-header">
         <nav class="cadastrar-header-nav">
-            <a href="./index.html"><img class="cadastrar-header-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+            <a href="./index.html"><img alt="A marca do Stakeholders." class="cadastrar-header-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
             
             <div class="cadastrar-header-nav-conteudo-navbar-links">
-                <a href="">Explorar</a>
-                <a href="">Pedidos</a>
+                <a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Explorar</a>
+                <a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Pedidos</a>
             </div>
 
             <div class="cadastrar-header-nav-conteudo-navbar-pesquisa">
-                <input placeholder="Pesquisar" class="pesquisa"> 
-                <button class="botao"> IR </button>
+                <input class="pesquisa" type="text" placeholder="Pesquisar"> 
+                <button class="botao" onclick="alert('Função ainda não implementada'); event.preventDefault();"> IR </button>
             </div>
                 
             <div class="cadastrar-header-nav-conteudo-navbar-login">
+                <!-- <a href="">Meu menu</a>
+                <div class="usuario-logado">Maria</div> -->
                 <a href="./entrar.html">Entrar</a>
                 <a href="./cadastro.html">Cadastrar-se</a>
             </div>
@@ -41,23 +43,29 @@
                     <a class="botao-gmail">Conectar usando Gmail </a>
                     <hr>
                     <p class="titulo">Nome completo</p>
-                    <input type="text" placeholder="Seu nome completo" class="input">
+                    <input type="text" placeholder="Digite aqui seu nome completo" class="input">
                     <p class="titulo">Email</p>
-                    <input type="text" placeholder="stakeholder@email.com" class="input">
-                    <!-- <p class="dados-invalidos">Email incorreto</p> -->
+                    <input type="text" placeholder="Digite aqui seu email" class="input">
+                    <p class="dados-invalidos invisivel"></p>
                     <p class="titulo">Senha</p>
-                    <input type="password" placeholder="••••••••••" class="input">
-                    <!-- <p class="dados-invalidos">Senha incorreta</p> -->
+                    <input type="password" placeholder="Digite aqui sua senha" class="input" value="">
+                    <p class="dados-invalidos invisivel"></p>
                     <p class="titulo">Confirme a senha</p>
-                    <input type="password" placeholder="••••••••••" class="input">
-                    <!-- <p class="dados-invalidos">Senha incorreta</p> -->
+                    <input type="password" placeholder="Digite aqui sua senha novamente" class="input" value="">
+                    <p class="dados-invalidos invisivel"></p>
                     <p class="titulo">Você quer contribuir desenvolvendo scripts na plataforma?</p>
-                    <input class="radio" type="radio" name="opcoes" value="sim">Sim<br><!-- Não sei fazer isso ainda. -->
-                    <input class="radio" type="radio" name="opcoes" value="nao" checked>Não<br>
+                    <div class="organiza-bot">
+                        <input class="radio" type="submit" name="opcoes" value="sim">
+                        <input class="radio radio-selecionado" type="submit" name="opcoes" value="nao">
+                    </div>
                     <p class="titulo">Escolha algumas categorias de seu interesse.</p>
-                    <input class="checkbox" type="checkbox" name="categorias" value="Universidades">Universidades<br><!-- Não sei fazer isso ainda. -->
-                    <input class="checkbox" type="checkbox" name="categorias" value="Compras">Compras<br>
-                    <input class="checkbox" type="checkbox" name="categorias" value="Viagens">Viagens<br>
+                    <div class="organiza-bot2">
+                        <ul>
+                            <li><a class="checkbox nao-selecionado" href="">Universidades</a></li>
+                            <li><a class="checkbox nao-selecionado" href="">Compras</a></li>
+                            <li><a class="checkbox nao-selecionado" href="">Viagens</a></li>
+                        </ul>
+                    </div>
                     
                     <div class="botoes-cadastro">
                         <button class="botao-cadastrar">Cadastrar</button>
@@ -67,31 +75,31 @@
             </form>
         </div>
     </div>
-    <button class="voltar">Voltar</button>
+    <button class="voltar" onclick="alert('Função ainda não implementada'); event.preventDefault();">Voltar</button>
     <footer class="script-footer">
         <div class="script-container">
             <div class="script-grupo">
-                <a href="" class="script-grupo-titulo" >Sobre nós</a>
+                <a href="#" class="script-grupo-titulo" onclick="alert('Função ainda não implementada'); event.preventDefault();">Sobre nós</a>
                 <ul>
-                    <li><a href="">Quem somos</a></li>
-                    <li><a href="">Identidade visual</a></li>
-                    <li><a href="">Parceiros</a></li>
+                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Quem somos</a></li>
+                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Identidade visual</a></li>
+                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Parceiros</a></li>
                 </ul>
             </div>
             <div class="script-grupo">
-                <a href="" class="script-grupo-titulo">FAQ</a>
+                <a href="#" class="script-grupo-titulo" onclick="alert('Função ainda não implementada'); event.preventDefault();">FAQ</a>
                 <ul>
-                    <li><a href="">O que é um script?</a></li>
-                    <li><a href="">Duvidas frequantes</a></li>
-                    <li><a href="">Exibir mais</a></li>
+                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">O que é um script?</a></li>
+                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Duvidas frequantes</a></li>
+                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Exibir mais</a></li>
                 </ul>
             </div>
             <div class="script-grupo">
-                <a href="" class="script-grupo-titulo">Contato</a>
+                <a href="#" class="script-grupo-titulo" onclick="alert('Função ainda não implementada'); event.preventDefault();">Contato</a>
                 <ul>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Email</a></li>
+                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Facebook</a></li>
+                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Instagram</a></li>
+                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Email</a></li>
                 </ul>
             </div>
         </div>

@@ -50,7 +50,8 @@ function criarCardScript(objeto){
 
     botoes[0].addEventListener("click", ()=>{
         event.preventDefault();
-        alert('Para executar scripts é necessário ter o servidor local instalado em seu computador e ter adicionado esse script à sua biblioteca.');
+        window.location.href='http://localhost:8000/puppe';
+        //alert('Para executar scripts é necessário ter o servidor local instalado em seu computador e ter adicionado esse script à sua biblioteca.');
     });
     botoes[1].addEventListener("click", ()=>{
         event.preventDefault();

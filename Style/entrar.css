@@ -181,13 +181,18 @@ body{
     width: 100%;
 }
 .entrar > .card-entrar{
-    width: 67%;
+    width: 550px;
+    padding: 20px 0;
     background-color: rgb(245, 245, 245);
     border-radius: 20px;
     margin: 60px auto;
     box-shadow: 0 0 20px rgb(70, 70, 70);
     display: flex;
     justify-content: center;
+}
+
+.card-entrar form{
+    width: 420px;
 }
 
 .entrar-com{
@@ -370,4 +375,8 @@ hr{
     font-family: "Aller-regular";
     font-size: 11px;
     text-align: center;
+}
+
+.invisivel{
+    display: none;
 }

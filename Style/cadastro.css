@@ -130,6 +130,19 @@ body{
     font-family: "Aller-regular"; 
 }
 
+.usuario-logado{
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    margin: 20px;
+    font-family: "Aller-regular";
+    text-align: center;
+}
+
 .cadastrar-header-nav-conteudo-navbar-links>a:hover{
     border: 2px solid white;
     background-color: white;
@@ -137,12 +150,24 @@ body{
 }
 
 .cadastrar-header-nav-conteudo-navbar-login>a{
+    display: inline-block;
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
     text-decoration: none;
     background-color: none;
     color: white;
+    margin: 10px;
+    font-family: "Aller-regular"; 
+}
+
+body > header > nav > div.cadastrar-header-nav-conteudo-navbar-login > a:nth-child(2){
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: white;
+    color: black;
     margin: 10px;
     font-family: "Aller-regular"; 
 }
@@ -181,7 +206,8 @@ body{
     width: 100%;
 }
 .cadastrar > .card-cadastrar{
-    width: 67%;
+    width: 550px;
+    padding: 20px 0;
     background-color: rgb(245, 245, 245);
     border-radius: 20px;
     margin: 60px auto;
@@ -389,4 +415,79 @@ hr{
     font-family: "Aller-regular";
     font-size: 11px;
     text-align: center;
+}
+
+.invisivel{
+    display: none;
+}
+
+.organiza-bot{
+    display: flex;
+    justify-content: center;
+}
+
+.radio{
+    display: inline-block;
+    color: #215caa;
+    background: rgb(245, 245, 245);
+    border: 2px solid #215caa;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px 5px;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.radio-selecionado{
+    display: inline-block;
+    color: white;
+    background: linear-gradient(90deg, #7a60c5, #215caa);
+    border: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px 5px;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.organiza-bot2{
+    display: block;
+    width: 280px;
+    margin: auto;
+}
+
+.organiza-bot2 ul{
+    list-style-type: none;
+}
+
+.nao-selecionado{
+    display: block;
+    width: 95%;
+    text-align: center;
+    margin: 20px 5px;
+    padding: 10px 0;
+    color: #215caa;
+    background: rgb(245, 245, 245);
+    border: 2px solid #215caa;
+    border-radius: 50px;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.selecionado{
+    display: block;
+    width: 95%;
+    text-align: center;
+    margin: 20px 5px;
+    padding: 10px 0;
+    color: white;
+    background: linear-gradient(90deg, #7a60c5, #215caa);
+    border: 2px solid white;
+    border-radius: 50px;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    text-decoration: none;
 }

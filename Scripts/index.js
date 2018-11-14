@@ -1,26 +1,4 @@
-{/* <div class="scripts-card">
-    <div class="script-card-conteudo">
-        <div class="script-card-conteudo-textos">
-            <h3 class="titulo-bloco">
-                Emitir histórico acadêmico do aluno em PDF - SIGAA UFC
-            </h3>
-            <h4 class="subtitulo-bloco">
-                Categoria Universidade
-            </h4>
-            <p class="descrição-script">
-                Esta é uma breve descrição do script.
-            </p>
-        </div>
-        <div class="div-botoes-bloco-texto">
-            <button class="botao-mais-detalhes" onclick="window.location.href='./script.html'">
-                Mais detalhes
-            </button>
-            <button class="botao-mostrar-relacionados">
-                Mostrar relacionados
-            </button>
-        </div>
-    </div>
-</div> */}
+
 
 let urlScripts = "http://localhost:3000/scripts?_sort=id&_order=desc&_limit=1";
 
@@ -167,6 +145,25 @@ function cardsScripts(objeto, num) {
     }
 }
 
+function checkarUsuarioLogado(){
+    if(localStorage.getItem("idUsuarioLogado")){
+        let cadastrarNav = $(".header-home-nav-conteudo-navbar-login");
+        cadastrarNav[0].innerHTML = "";
+        let a = document.createElement("a");
+        let div = document.createElement("div");
 
+        a.innerText = "Meu menu";
+        a.setAttribute("href","");
+        div.innerText = localStorage.getItem("nomeUsuarioLogado");
+        div.classList.add("usuario-logado");
+
+        cadastrarNav[0].appendChild(a);
+        cadastrarNav[0].appendChild(div);
+    }
+}
+
+
+
+checkarUsuarioLogado();
 pegarScriptsEmAlta();
 pegarPedidosEmAlta();
