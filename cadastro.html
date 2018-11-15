@@ -9,9 +9,10 @@
     <title>Stakeholders</title>
 </head>
 <body>
+    <span class="feedbackTela">Você está na tela de cadastro</span>
     <header class="cadastrar-header">
         <nav class="cadastrar-header-nav">
-            <a href="./index.html"><img alt="A marca do Stakeholders." class="cadastrar-header-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+            <a href="./index.html"></a><img alt="A marca do Stakeholders." class="cadastrar-header-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
             
             <div class="cadastrar-header-nav-conteudo-navbar-links">
                 <a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Explorar</a>
@@ -19,20 +20,19 @@
             </div>
 
             <div class="cadastrar-header-nav-conteudo-navbar-pesquisa">
-                <input class="pesquisa" type="text" placeholder="Pesquisar"> 
+                <span>Digite em seguida sua dúvida: </span>
+                <input class="pesquisa" type="text" placeholder="Pesquisar" label="pesquisar"> 
                 <button class="botao" onclick="alert('Função ainda não implementada'); event.preventDefault();"> IR </button>
             </div>
                 
             <div class="cadastrar-header-nav-conteudo-navbar-login">
-                <!-- <a href="">Meu menu</a>
-                <div class="usuario-logado">Maria</div> -->
                 <a href="./entrar.html">Entrar</a>
                 <a href="./cadastro.html">Cadastrar-se</a>
             </div>
         </nav>
         <div class="cadastrar-header-titulo">
             <h2>Cadastrar</h2>
-            <p>Legal! Aqui você terá que preencher alguns dados para sabermos<br>quem é você e mostrarmos temas de seu interesse.</p>
+            <p>Legal! Aqui você terá que preencher alguns dados para sabermos quem é você<br>e mostrarmos temas de seu interesse.</p>
         </div>
     </header>
     <div class="cadastrar">
@@ -42,34 +42,38 @@
                     <a class="botao-facebook">Conectar usando facebook </a>
                     <a class="botao-gmail">Conectar usando Gmail </a>
                     <hr>
-                    <p class="titulo">Nome completo</p>
-                    <input type="text" placeholder="Digite aqui seu nome completo" class="input">
-                    <p class="titulo">Email</p>
-                    <input type="text" placeholder="Digite aqui seu email" class="input">
+                    <p class="titulo">Digite abaixo seu nome completo</p>
+                    <input type="text" placeholder="Nome Sobrenome" class="input">
+                    <p class="titulo">Digite abaixo seu email</p>
+                    <input type="text" placeholder="seunome@email.com" class="input">
                     <p class="dados-invalidos invisivel"></p>
-                    <p class="titulo">Senha</p>
-                    <input type="password" placeholder="Digite aqui sua senha" class="input" value="">
+                    <p class="titulo">Digite abaixo sua senha</p>
+                    <input type="password" placeholder="Senha" class="input" value="">
                     <p class="dados-invalidos invisivel"></p>
-                    <p class="titulo">Confirme a senha</p>
-                    <input type="password" placeholder="Digite aqui sua senha novamente" class="input" value="">
+                    <p class="titulo">Confirme sua senha abaixo</p>
+                    <input type="password" placeholder="Senha" class="input" value="">
                     <p class="dados-invalidos invisivel"></p>
                     <p class="titulo">Você quer contribuir desenvolvendo scripts na plataforma?</p>
                     <div class="organiza-bot">
-                        <input class="radio" type="submit" name="opcoes" value="sim">
-                        <input class="radio radio-selecionado" type="submit" name="opcoes" value="nao">
+                        <span class="radio radio-selecionado">Sim</span><input type="radio" name="checkbox1" class="radiobox"checked>
+                        <span class="radio">Não</span><input type="radio" name="checkbox1" class="radiobox">
                     </div>
-                    <p class="titulo">Escolha algumas categorias de seu interesse.</p>
+                    <div class="container-div">
+                        <p class="titulo">Escolha algumas categorias de seu interesse clicando nos links abaixo. Não se preocupe, você não será redirecionado.</p>
+                    </div>
                     <div class="organiza-bot2">
                         <ul>
-                            <li><a class="checkbox nao-selecionado" href="">Universidades</a></li>
-                            <li><a class="checkbox nao-selecionado" href="">Compras</a></li>
-                            <li><a class="checkbox nao-selecionado" href="">Viagens</a></li>
+                            <li><span class="checkbox nao-selecionado checkbox1">Universidades</span><input type="checkbox" name="checkbox1" class="caixaCheckbox"></li>
+                            <li><span class="checkbox nao-selecionado">Compras</span><input type="checkbox" name="checkbox2" class="caixaCheckbox"></li>
+                            <li><span class="checkbox nao-selecionado checkbox3">Viagens</span><input type="checkbox" name="checkbox3" class="caixaCheckbox"></li>
                         </ul>
                     </div>
                     
                     <div class="botoes-cadastro">
-                        <button class="botao-cadastrar">Cadastrar</button>
-                        <button class="botao-cancelar">Cancelar</button>
+                        <ul>
+                            <li><button class="botao-cadastrar">Cadastrar</button></li>
+                            <li><button class="botao-cancelar">Cancelar</button></li>
+                        </ul>
                     </div>
                 </div>
             </form>

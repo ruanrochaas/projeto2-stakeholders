@@ -181,11 +181,12 @@ function addEventListenerFeedbacks(){
 }
 
 
-function addEventListenerAuxCadastro(){
-    localStorage.setItem("auxCadastroDev","nao");
+function addEventListenerAuxCadastroRadios(){
+    localStorage.setItem("auxCadastroDev","sim");
     localStorage.setItem("auxCadastroCateg", "");
 
     let radio = $(".radio");
+    let radiobox = $(".radiobox");
     radio[0].addEventListener("click", ()=>{
         event.preventDefault();
         let dev = localStorage.getItem("auxCadastroDev");
@@ -193,6 +194,8 @@ function addEventListenerAuxCadastro(){
             localStorage.setItem("auxCadastroDev","sim");
             radio[0].classList.add("radio-selecionado");
             radio[1].classList.remove("radio-selecionado");
+            radiobox[0].checked = true;
+            radiobox[1].checked = false;
         }
     });
 
@@ -203,11 +206,39 @@ function addEventListenerAuxCadastro(){
             localStorage.setItem("auxCadastroDev","nao");
             radio[1].classList.add("radio-selecionado");
             radio[0].classList.remove("radio-selecionado");
+            radiobox[0].checked = false;
+            radiobox[1].checked = true;
+        }
+    });
+}
+
+function addEventListenerAuxCadastroRadiobox(){
+
+    let radio = $(".radio");
+    let radiobox = $(".radiobox");
+    radiobox[0].addEventListener("click", ()=>{
+        let dev = localStorage.getItem("auxCadastroDev");
+        if (dev == "nao") {
+            localStorage.setItem("auxCadastroDev","sim");
+            radio[0].classList.add("radio-selecionado");
+            radio[1].classList.remove("radio-selecionado");
         }
     });
 
+    radiobox[1].addEventListener("click", ()=>{
+        let dev = localStorage.getItem("auxCadastroDev");
+        if (dev == "sim") {
+            localStorage.setItem("auxCadastroDev","nao");
+            radio[1].classList.add("radio-selecionado");
+            radio[0].classList.remove("radio-selecionado");
+        }
+    });
+}
 
+function addEventListenerAuxCadastroCheckboxes1(){
     let checkboxs = $(".checkbox");
+    let caixasCheckbox = $(".caixaCheckbox");
+
     checkboxs[0].addEventListener("click", ()=>{
         event.preventDefault();
         let categorias = localStorage.getItem("auxCadastroCateg").split(",");
@@ -221,6 +252,7 @@ function addEventListenerAuxCadastro(){
         if(estaDentro == -1){
             categorias.push(categoria);
             checkboxs[0].classList.add("selecionado");
+            caixasCheckbox[0].checked = true;
         } else {
             for(let i in categorias){
                 if(categorias[i] == categoria){
@@ -228,6 +260,7 @@ function addEventListenerAuxCadastro(){
                 }
             }
             checkboxs[0].classList.remove("selecionado");
+            caixasCheckbox[0].checked = false;
         }
         categorias.join(",");
         localStorage.setItem("auxCadastroCateg", categorias);
@@ -246,6 +279,7 @@ function addEventListenerAuxCadastro(){
         if(estaDentro == -1){
             categorias.push(categoria);
             checkboxs[1].classList.add("selecionado");
+            caixasCheckbox[1].checked = true;
         } else {
             for(let i in categorias){
                 if(categorias[i] == categoria){
@@ -253,6 +287,7 @@ function addEventListenerAuxCadastro(){
                 }
             }
             checkboxs[1].classList.remove("selecionado");
+            caixasCheckbox[1].checked = false;
         }
         categorias.join(",");
         localStorage.setItem("auxCadastroCateg", categorias);
@@ -271,6 +306,7 @@ function addEventListenerAuxCadastro(){
         if(estaDentro == -1){
             categorias.push(categoria);
             checkboxs[2].classList.add("selecionado");
+            caixasCheckbox[2].checked = true;
         } else {
             for(let i in categorias){
                 if(categorias[i] == categoria){
@@ -278,6 +314,91 @@ function addEventListenerAuxCadastro(){
                 }
             }
             checkboxs[2].classList.remove("selecionado");
+            caixasCheckbox[2].checked = false;
+        }
+        categorias.join(",");
+        localStorage.setItem("auxCadastroCateg", categorias);
+    });
+}
+
+function addEventListenerAuxCadastroCheckboxes2(){
+
+    let checkboxs = $(".checkbox");
+    let caixasCheckbox = $(".caixaCheckbox");
+
+    caixasCheckbox[0].addEventListener("click", ()=>{
+        let categorias = localStorage.getItem("auxCadastroCateg").split(",");
+
+        if(categorias[0] == ""){
+            categorias = [];
+        }
+        
+        let categoria = checkboxs[0].innerText;
+        let estaDentro = categorias.indexOf(categoria);
+        if(estaDentro == -1){
+            categorias.push(categoria);
+            checkboxs[0].classList.add("selecionado");
+            caixasCheckbox[0].checked = true;
+        } else {
+            for(let i in categorias){
+                if(categorias[i] == categoria){
+                    categorias.splice(i,1);
+                }
+            }
+            checkboxs[0].classList.remove("selecionado");
+            caixasCheckbox[0].checked = false;
+        }
+        categorias.join(",");
+        localStorage.setItem("auxCadastroCateg", categorias);
+    });
+
+    caixasCheckbox[1].addEventListener("click", ()=>{
+        let categorias = localStorage.getItem("auxCadastroCateg").split(",");
+
+        if(categorias[0] == ""){
+            categorias = [];
+        }
+        
+        let categoria = checkboxs[1].innerText;
+        let estaDentro = categorias.indexOf(categoria);
+        if(estaDentro == -1){
+            categorias.push(categoria);
+            checkboxs[1].classList.add("selecionado");
+            caixasCheckbox[1].checked = true;
+        } else {
+            for(let i in categorias){
+                if(categorias[i] == categoria){
+                    categorias.splice(i,1);
+                }
+            }
+            checkboxs[1].classList.remove("selecionado");
+            caixasCheckbox[1].checked = false;
+        }
+        categorias.join(",");
+        localStorage.setItem("auxCadastroCateg", categorias);
+    });
+
+    caixasCheckbox[2].addEventListener("click", ()=>{
+        let categorias = localStorage.getItem("auxCadastroCateg").split(",");
+
+        if(categorias[0] == ""){
+            categorias = [];
+        }
+        
+        let categoria = checkboxs[2].innerText;
+        let estaDentro = categorias.indexOf(categoria);
+        if(estaDentro == -1){
+            categorias.push(categoria);
+            checkboxs[2].classList.add("selecionado");
+            caixasCheckbox[2].checked = true;
+        } else {
+            for(let i in categorias){
+                if(categorias[i] == categoria){
+                    categorias.splice(i,1);
+                }
+            }
+            checkboxs[2].classList.remove("selecionado");
+            caixasCheckbox[2].checked = false;
         }
         categorias.join(",");
         localStorage.setItem("auxCadastroCateg", categorias);
@@ -302,8 +423,15 @@ function checkarUsuarioLogado(){
 }
 
 
+window.addEventListener("", ()=>{
+
+});
+
 
 checkarUsuarioLogado();
-addEventListenerAuxCadastro();
+addEventListenerAuxCadastroRadios();
+addEventListenerAuxCadastroRadiobox();
+addEventListenerAuxCadastroCheckboxes1();
+addEventListenerAuxCadastroCheckboxes2();
 addEventListenerFeedbacks();
 addEventListenerCadastrar();
