@@ -150,15 +150,14 @@ function checkarUsuarioLogado(){
         let cadastrarNav = $(".header-home-nav-conteudo-navbar-login");
         cadastrarNav[0].innerHTML = "";
         let a = document.createElement("a");
-        let div = document.createElement("div");
+        let a2 = document.createElement("a");
 
         a.innerText = "Meu menu";
         a.setAttribute("href","");
-        div.innerText = localStorage.getItem("nomeUsuarioLogado");
-        div.classList.add("usuario-logado");
+        a2.innerText = localStorage.getItem("nomeUsuarioLogado");
 
         cadastrarNav[0].appendChild(a);
-        cadastrarNav[0].appendChild(div);
+        cadastrarNav[0].appendChild(a2);
     }
 }
 

@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./Scripts/Bibliotecas/shortcut.js"></script>
     <link rel="stylesheet" href="./Style/cadastro.css">
     <title>Stakeholders</title>
 </head>
 <body>
-    <span class="feedbackTela">Você está na tela de cadastro</span>
+    <span class="feedback-tela-acessibilidade">Você está na tela de cadastro</span>
     <header class="cadastrar-header">
         <nav class="cadastrar-header-nav">
-            <a href="./index.html"></a><img alt="A marca do Stakeholders." class="cadastrar-header-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+            <a href="./index.html"><img alt="A marca do Stakeholders." class="cadastrar-header-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a></a>
             
             <div class="cadastrar-header-nav-conteudo-navbar-links">
                 <a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Explorar</a>
@@ -20,7 +21,7 @@
             </div>
 
             <div class="cadastrar-header-nav-conteudo-navbar-pesquisa">
-                <span>Digite em seguida sua dúvida: </span>
+                <span class="feedback-tela-acessibilidade">Digite em seguida sua dúvida: </span>
                 <input class="pesquisa" type="text" placeholder="Pesquisar" label="pesquisar"> 
                 <button class="botao" onclick="alert('Função ainda não implementada'); event.preventDefault();"> IR </button>
             </div>
@@ -44,6 +45,7 @@
                     <hr>
                     <p class="titulo">Digite abaixo seu nome completo</p>
                     <input type="text" placeholder="Nome Sobrenome" class="input">
+                    <p class="dados-invalidos invisivel"></p>
                     <p class="titulo">Digite abaixo seu email</p>
                     <input type="text" placeholder="seunome@email.com" class="input">
                     <p class="dados-invalidos invisivel"></p>
@@ -79,7 +81,7 @@
             </form>
         </div>
     </div>
-    <button class="voltar" onclick="alert('Função ainda não implementada'); event.preventDefault();">Voltar</button>
+    <button class="voltar">Voltar</button>
     <footer class="script-footer">
         <div class="script-container">
             <div class="script-grupo">

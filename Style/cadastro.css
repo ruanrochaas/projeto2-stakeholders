@@ -91,7 +91,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.feedbackTela{
+.feedback-tela-acessibilidade{
     display: block;
     max-width: 0;
     max-height: 0;
@@ -139,7 +139,8 @@ body{
 }
 
 .usuario-logado{
-    display: inline-block;
+    display: block;
+    float: left;
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -185,12 +186,6 @@ body > header > nav > div.cadastrar-header-nav-conteudo-navbar-login > a:nth-chi
     border: 2px solid white;
     background-color: white;
     color: black;
-}
-
-.cadastrar-header-nav-conteudo-navbar-pesquisa > span{
-    display: block;
-    max-height: 0;
-    overflow: hidden;
 }
 
 .cadastrar-header-nav-conteudo-navbar-pesquisa > .pesquisa {

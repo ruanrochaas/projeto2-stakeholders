@@ -83,6 +83,12 @@ button{
     background-repeat: no-repeat;
     background-position: center;
 }
+.feedback-tela-acessibilidade{
+    display: block;
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
+}
 .header-home > .header-home-titulo{
     transform: translateY(190px);
 }
@@ -115,6 +121,8 @@ button{
 }
 
 .header-home-nav-conteudo-navbar-links>a{
+    display: block;
+    float: left;
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -132,6 +140,8 @@ button{
 }
 
 .header-home-nav-conteudo-navbar-login>a{
+    display: block;
+    float: left;
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -148,30 +158,22 @@ button{
     color: black;
 }
 
-.usuario-logado{
-    display: inline-block;
-    border-radius: 50px;
-    padding: 10px 20px;
-    border: 2px solid white;
-    text-decoration: none;
-    background-color: none;
-    color: white;
-    margin: 20px;
-    font-family: "Aller-regular";
-    text-align: center;
-}
-
 .header-home-nav-conteudo-navbar-pesquisa > .pesquisa {
+    display: block;
+    float: left;
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
     text-decoration: none;
     background-color: none;
     color: black;
-    font-family: "Aller-regular";                
+    font-family: "Aller-regular";     
+    margin-right: 5px;
 }
 
 .header-home-nav-conteudo-navbar-pesquisa > .botao{
+    display: block;
+    float: left;
     border-radius: 50px;
     padding: 10px 13px;
     border: 2px solid white;
@@ -179,7 +181,7 @@ button{
     background-color: white;
     color: black;
     font-family: "Aller-regular";
-    cursor: pointer;          
+    cursor: pointer;
 }
 
 
@@ -350,6 +352,8 @@ button{
 }
 
 .botao-mais-detalhes, .botao-mostrar-relacionados{
+    display: block;
+    float: left;
     border: none;
     color: #ffffff;
     border-radius: 50px;
@@ -357,7 +361,7 @@ button{
     background: linear-gradient(90deg, #48c0b6, #215caa);
     font-family: "Aller-regular";
     font-size: 21px;  
-    margin-left: 30px;
+    margin: 0px 5px;
 }
 
 .botao-mais-detalhes:hover, .botao-mostrar-relacionados:hover{
@@ -367,13 +371,13 @@ button{
     padding: 10px 20px;
     background: linear-gradient(90deg, #48c0b6, #215caa);
     font-family: "Aller-regular";
-    font-size: 21px;  
-    margin-left: 30px;
-    transform: scale(1.1);
+    font-size: 21px;
 }
 
 .div-botoes-bloco-texto{
-    text-align: center;
+    width: 430px;
+    height: 40px;
+    margin: auto;
 }
 
 .carregar-mais {
@@ -387,5 +391,4 @@ button{
 }
 
 .carregar-mais:hover{
-    transform: scale(1.1);
 }

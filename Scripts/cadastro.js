@@ -96,14 +96,14 @@ function formarObjeto(id, nome, email, senha, desenvolvedor, categorias){
         "senha": senha,
         "desenvolvedor": desenvolvedor,
         "foto": "",
-        "categoriasFav[]": categorias2,
-        "bibliotecaIdScripts[]": ["", ""],
-        "listaIdPedidosCriados[]": ["", ""],
+        "categoriasFav": categorias2,
+        "bibliotecaIdScripts": "",
+        "listaIdPedidosCriados": "",
         "qtdPedidosCriados": 0,
-        "listaIdScriptsCriados[]": ["", ""],
+        "listaIdScriptsCriados": "",
         "qtdScriptsCriados": 0,
         "qtdScriptsCriadosMais10Gosteis": 0,
-        "emblemas[]": ["", ""],
+        "emblemas": "",
         "qtdComentarios": 0
     };
     return objeto;
@@ -150,6 +150,17 @@ function addEventListenerFeedbacks(){
     let elementos = $(".input");
     let msgs = $(".dados-invalidos");
 
+    elementos[0].addEventListener("input", ()=>{
+        let nome = elementos[0].value;
+
+        if((nome == "")){
+            msgs[0].innerText = "O campo não pode ficar vazio.";
+            msgs[0].classList.remove("invisivel");
+        } else {
+            msgs[0].classList.add("invisivel");
+        }
+    });
+
     elementos[1].addEventListener("input", ()=>{
         let email = elementos[1].value;
         let emailP1 = email.substring(0, email.indexOf("@"));
@@ -157,25 +168,36 @@ function addEventListenerFeedbacks(){
         
         if((emailP1.length >=1) && (emailP2.length >=3) && (emailP1.search("@")==-1) && (emailP2.search("@")==-1) && (emailP1.search(" ")==-1) && 
         (emailP2.search(" ")==-1) && (emailP2.search(".")!=-1) && (emailP2.indexOf(".") >=1)&& (emailP2.lastIndexOf(".") < emailP2.length - 1)){
-            msgs[0].classList.add("invisivel");
+            msgs[1].classList.add("invisivel");
         } else if(email.length == 0){
-            msgs[0].innerText = "O campo não pode ficar vazio.";
-            msgs[0].classList.remove("invisivel");
+            msgs[1].innerText = "O campo não pode ficar vazio.";
+            msgs[1].classList.remove("invisivel");
         } else {
-            msgs[0].innerText = "Formato do email está incorreto.";
-            msgs[0].classList.remove("invisivel");
+            msgs[1].innerText = "Formato do email está incorreto.";
+            msgs[1].classList.remove("invisivel");
+        }
+    });
+
+    elementos[2].addEventListener("input", ()=>{
+        let nome = elementos[2].value;
+
+        if((nome == "")){
+            msgs[2].innerText = "O campo não pode ficar vazio.";
+            msgs[2].classList.remove("invisivel");
+        } else {
+            msgs[2].classList.add("invisivel");
         }
     });
 
     elementos[3].addEventListener("input", ()=>{
         if(elementos[2].value != elementos[3].value){
-            msgs[2].innerText = "As senhas digitadas precisam ser iguais."
-            msgs[2].classList.remove("invisivel");
+            msgs[3].innerText = "As senhas digitadas precisam ser iguais."
+            msgs[3].classList.remove("invisivel");
         } else if(elementos[3].value == ""){
-            msgs[2].innerText = "O campo não pode ficar vazio."
-            msgs[2].classList.remove("invisivel");
+            msgs[3].innerText = "O campo não pode ficar vazio."
+            msgs[3].classList.remove("invisivel");
         } else {
-            msgs[2].classList.add("invisivel");
+            msgs[3].classList.add("invisivel");
         };
     });
 }
@@ -235,6 +257,8 @@ function addEventListenerAuxCadastroRadiobox(){
     });
 }
 
+
+/* ARRUMAR ISSO AQUI */
 function addEventListenerAuxCadastroCheckboxes1(){
     let checkboxs = $(".checkbox");
     let caixasCheckbox = $(".caixaCheckbox");
@@ -405,30 +429,35 @@ function addEventListenerAuxCadastroCheckboxes2(){
     });
 }
 
+/* AINDA FALTA MUDAR ISSO AQUI */
 function checkarUsuarioLogado(){
     if(localStorage.getItem("idUsuarioLogado")){
-        let cadastrarNav = $(".cadastrar-header-nav-conteudo-navbar-login");
+        let cadastrarNav = $(".header-home-nav-conteudo-navbar-login");
         cadastrarNav[0].innerHTML = "";
         let a = document.createElement("a");
-        let div = document.createElement("div");
+        let a2 = document.createElement("a");
 
         a.innerText = "Meu menu";
         a.setAttribute("href","");
-        div.innerText = localStorage.getItem("nomeUsuarioLogado");
-        div.classList.add("usuario-logado");
+        a2.innerText = localStorage.getItem("nomeUsuarioLogado");
 
         cadastrarNav[0].appendChild(a);
-        cadastrarNav[0].appendChild(div);
+        cadastrarNav[0].appendChild(a2);
     }
 }
 
+function addEventListenerVoltar(){
+    let botaoVoltar = $(".voltar");
+    
+    botaoVoltar[0].addEventListener("click", ()=>{
+        window.history.back();
+    });
+}
 
-window.addEventListener("", ()=>{
-
-});
 
 
 checkarUsuarioLogado();
+addEventListenerVoltar();
 addEventListenerAuxCadastroRadios();
 addEventListenerAuxCadastroRadiobox();
 addEventListenerAuxCadastroCheckboxes1();
