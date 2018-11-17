@@ -1,7 +1,7 @@
 {
   "dados": [
     {
-      "ultimoIdUsuario": "10",
+      "ultimoIdUsuario": "2",
       "id": 0
     }
   ],
@@ -13,14 +13,14 @@
       "senha": "",
       "desenvolvedor": false,
       "foto": "",
-      "categoriasFav": [],
-      "bibliotecaIdScripts": [],
-      "listaIdPedidosCriados": [],
+      "categoriasFav": "",
+      "bibliotecaIdScripts": "",
+      "listaIdPedidosCriados": "",
       "qtdPedidosCriados": 0,
-      "listaIdScriptsCriados": [],
+      "listaIdScriptsCriados": "",
       "qtdScriptsCriados": 0,
       "qtdScriptsCriadosMais10Gosteis": 0,
-      "emblemas": [],
+      "emblemas": "",
       "qtdComentarios": 0
     },
     {
@@ -43,6 +43,23 @@
       "qtdScriptsCriadosMais10Gosteis": "0",
       "emblemas": "",
       "qtdComentarios": "0"
+    },
+    {
+      "id": "2",
+      "nome": "Ruan Teste",
+      "email": "teste@teste.com",
+      "senha": "123",
+      "desenvolvedor": "true",
+      "foto": "",
+      "categoriasFav": ",Universidades,Compras,Viagens",
+      "bibliotecaIdScripts": "",
+      "listaIdPedidosCriados": "",
+      "qtdPedidosCriados": "0",
+      "listaIdScriptsCriados": "",
+      "qtdScriptsCriados": "0",
+      "qtdScriptsCriadosMais10Gosteis": "0",
+      "emblemas": "",
+      "qtdComentarios": "0"
     }
   ],
   "scripts": [
@@ -53,12 +70,10 @@
       "complementoUrl": "",
       "idAutor": "1",
       "dataCria": "10/11/2019",
-      "categorias": [
-        "Universidades"
-      ],
+      "categorias": ",Universidades,",
       "descricao": "Esse script fará as seguintes ações no seu navegador: 1) Abrirá uma nova janela do Chrome; 2) Entrará na página do SIGAA; 3) Esperará que você faça seu login; 4) Fará a navegação no sistema até chegar na página do seu histórico escolar.",
       "gosteis": 0,
-      "idQuemGostou": [],
+      "idQuemGostou": ",",
       "foiDenunciado": false,
       "denuncia": [
         {
@@ -81,14 +96,12 @@
       "autor": "Jaspion",
       "idAutor": "2",
       "dataCria": "11/11/2018",
-      "categorias": [
-        "Universidade"
-      ],
+      "categorias": ",Universidade,",
       "url": "https://si3.ufc.br/sigaa/",
       "descricao": "Gostaria que fizessem um script para eu poder ter acesso à parte onde eu posso ver o histórico do meu IRA no sistema SIGAA da UFC.",
       "status": "Não recebido",
       "gosteis": 0,
-      "idQuemGostou": [],
+      "idQuemGostou": ",",
       "foiDenunciado": false,
       "denuncia": [
         {

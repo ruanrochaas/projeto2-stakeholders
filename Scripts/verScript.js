@@ -2,9 +2,11 @@
 
 function formarStringCategorias(objeto){
     let string = "Categorias:"
-    for(let elemento of objeto.categorias){
+    let listaCateg = objeto.categorias.split(",");
+
+    for(let indice = 1; indice < listaCateg.length; indice++){
         string += " ";
-        string += elemento;
+        string += listaCateg[indice];
     }
     return string;
 }
@@ -223,6 +225,7 @@ function checkarUsuarioLogado(){
         a.innerText = "Meu menu";
         a.setAttribute("href","");
         a2.innerText = localStorage.getItem("nomeUsuarioLogado");
+        a2.setAttribute("href","");
 
         a2.addEventListener("click", ()=>{
             localStorage.removeItem("idUsuarioLogado");

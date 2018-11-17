@@ -38,9 +38,11 @@ function pegarPedidosEmAlta(){
 
 function formarStringCategorias(objeto){
     let string = "Categorias:"
-    for(let elemento of objeto.categorias){
+    let listaCateg = objeto.categorias.split(",");
+
+    for(let indice = 1; indice < listaCateg.length; indice++){
         string += " ";
-        string += elemento;
+        string += listaCateg[indice];
     }
     return string;
 }
@@ -77,7 +79,7 @@ function cardsScripts(objeto, num) {
     let titulo = document.createElement('h3');
     let subTitulo = document.createElement('h4');
     let descricao = document.createElement('p');
-    let bot1 = document.createElement("button");//mudar isso pra a
+    let bot1 = document.createElement("button");
     let bot2 = document.createElement("button");
     let textoTit = document.createTextNode(objeto.titulo);
     let textoSubTit = document.createTextNode(stringCategorias);
@@ -155,6 +157,13 @@ function checkarUsuarioLogado(){
         a.innerText = "Meu menu";
         a.setAttribute("href","");
         a2.innerText = localStorage.getItem("nomeUsuarioLogado");
+        a2.setAttribute("href","");
+
+        a2.addEventListener("click", ()=>{
+            localStorage.removeItem("idUsuarioLogado");
+            localStorage.removeItem("nomeUsuarioLogado");
+            window.location.reload();
+        });
 
         cadastrarNav[0].appendChild(a);
         cadastrarNav[0].appendChild(a2);

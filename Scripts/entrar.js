@@ -116,17 +116,7 @@ function feedbackComplementaresDeLogin2(feedback){
 /* AINDA FALTA MUDAR ISSO AQUI */
 function checkarUsuarioLogado(){
     if(localStorage.getItem("idUsuarioLogado")){
-        let cadastrarNav = $(".header-home-nav-conteudo-navbar-login");
-        cadastrarNav[0].innerHTML = "";
-        let a = document.createElement("a");
-        let a2 = document.createElement("a");
-
-        a.innerText = "Meu menu";
-        a.setAttribute("href","");
-        a2.innerText = localStorage.getItem("nomeUsuarioLogado");
-
-        cadastrarNav[0].appendChild(a);
-        cadastrarNav[0].appendChild(a2);
+        window.location.href = "./index.html";
     }
 }
 
@@ -138,6 +128,7 @@ function addEventListenerVoltar(){
     });
 }
 
+checkarUsuarioLogado();
 addEventListenerVoltar();
 addEventListenerFeedbacks();
 addEventListenerBotaoLogar();

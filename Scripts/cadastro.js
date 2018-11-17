@@ -1,11 +1,3 @@
-function checkarLogin(){
-    if (localStorage.getItem("usuarioLogado")) {
-        
-    } else {
-        window.location.href='./index.html';
-    }
-}
-
 function addEventListenerCadastrar(){
     let botaoCadastrar = $(".botao-cadastrar");
     botaoCadastrar[0].addEventListener("click", ()=>{
@@ -41,7 +33,7 @@ function checkarDados(ultimoId){
     }
 
     //Checkando as categorias escolhidas
-    let categorias = localStorage.getItem("auxCadastroCateg").split(",");
+    let categorias = localStorage.getItem("auxCadastroCateg");
 
     //Checkando se email e senha tem valores válidos
     if ((emailP1.length >=1) && (emailP2.length >=3) && (emailP1.search("@")==-1) && (emailP2.search("@")==-1) && (emailP1.search(" ")==-1) && 
@@ -257,8 +249,6 @@ function addEventListenerAuxCadastroRadiobox(){
     });
 }
 
-
-/* ARRUMAR ISSO AQUI */
 function addEventListenerAuxCadastroCheckboxes1(){
     let checkboxs = $(".checkbox");
     let caixasCheckbox = $(".caixaCheckbox");
@@ -266,10 +256,6 @@ function addEventListenerAuxCadastroCheckboxes1(){
     checkboxs[0].addEventListener("click", ()=>{
         event.preventDefault();
         let categorias = localStorage.getItem("auxCadastroCateg").split(",");
-
-        if(categorias[0] == ""){
-            categorias = [];
-        }
         
         let categoria = checkboxs[0].innerText;
         let estaDentro = categorias.indexOf(categoria);
@@ -294,10 +280,6 @@ function addEventListenerAuxCadastroCheckboxes1(){
         event.preventDefault();
         let categorias = localStorage.getItem("auxCadastroCateg").split(",");
 
-        if(categorias[0] == ""){
-            categorias = [];
-        }
-
         let categoria = checkboxs[1].innerText;
         let estaDentro = categorias.indexOf(categoria);
         if(estaDentro == -1){
@@ -320,10 +302,6 @@ function addEventListenerAuxCadastroCheckboxes1(){
     checkboxs[2].addEventListener("click", ()=>{
         event.preventDefault();
         let categorias = localStorage.getItem("auxCadastroCateg").split(",");
-
-        if(categorias[0] == ""){
-            categorias = [];
-        }
 
         let categoria = checkboxs[2].innerText;
         let estaDentro = categorias.indexOf(categoria);
@@ -353,10 +331,6 @@ function addEventListenerAuxCadastroCheckboxes2(){
     caixasCheckbox[0].addEventListener("click", ()=>{
         let categorias = localStorage.getItem("auxCadastroCateg").split(",");
 
-        if(categorias[0] == ""){
-            categorias = [];
-        }
-        
         let categoria = checkboxs[0].innerText;
         let estaDentro = categorias.indexOf(categoria);
         if(estaDentro == -1){
@@ -379,10 +353,6 @@ function addEventListenerAuxCadastroCheckboxes2(){
     caixasCheckbox[1].addEventListener("click", ()=>{
         let categorias = localStorage.getItem("auxCadastroCateg").split(",");
 
-        if(categorias[0] == ""){
-            categorias = [];
-        }
-        
         let categoria = checkboxs[1].innerText;
         let estaDentro = categorias.indexOf(categoria);
         if(estaDentro == -1){
@@ -405,10 +375,6 @@ function addEventListenerAuxCadastroCheckboxes2(){
     caixasCheckbox[2].addEventListener("click", ()=>{
         let categorias = localStorage.getItem("auxCadastroCateg").split(",");
 
-        if(categorias[0] == ""){
-            categorias = [];
-        }
-        
         let categoria = checkboxs[2].innerText;
         let estaDentro = categorias.indexOf(categoria);
         if(estaDentro == -1){
@@ -432,17 +398,7 @@ function addEventListenerAuxCadastroCheckboxes2(){
 /* AINDA FALTA MUDAR ISSO AQUI */
 function checkarUsuarioLogado(){
     if(localStorage.getItem("idUsuarioLogado")){
-        let cadastrarNav = $(".header-home-nav-conteudo-navbar-login");
-        cadastrarNav[0].innerHTML = "";
-        let a = document.createElement("a");
-        let a2 = document.createElement("a");
-
-        a.innerText = "Meu menu";
-        a.setAttribute("href","");
-        a2.innerText = localStorage.getItem("nomeUsuarioLogado");
-
-        cadastrarNav[0].appendChild(a);
-        cadastrarNav[0].appendChild(a2);
+        window.location.href = "./index.html";
     }
 }
 

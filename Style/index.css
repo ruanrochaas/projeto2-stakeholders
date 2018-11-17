@@ -321,7 +321,6 @@ button{
     box-sizing: border-box;
     border-radius: 20px;
     width: 900px;
-    height: 230px;
     background: rgb(245, 245, 245);
     margin: 0px auto;
     margin-top: 40px;
@@ -377,7 +376,7 @@ button{
 .div-botoes-bloco-texto{
     width: 430px;
     height: 40px;
-    margin: auto;
+    margin: 20px auto 10px auto;
 }
 
 .carregar-mais {
