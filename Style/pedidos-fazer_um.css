@@ -1,0 +1,383 @@
+/* Página de fazer um pedido */
+
+/* FONTES =============================================================== */
+@font-face{
+    font-family: 'Aller-bold';
+    src: url(../Componentes/assets/fonts/aller_bd-webfont.woff ) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-bold-italico';
+    src: url(../Componentes/assets/fonts/aller_bdit-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-italico';
+    src: url(../Componentes/assets/fonts/aller_it-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-light';
+    src: url(../Componentes/assets/fonts/aller_lt-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-light-italico';
+    src: url(../Componentes/assets/fonts/aller_ltit-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-regular';
+    src: url(../Componentes/assets/fonts/aller_rg-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-bold';
+    src: url(../Componentes/assets/fonts/asap-bold-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-bold-italico';
+    src: url(../Componentes/assets/fonts/asap-bolditalic-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-italico';
+    src: url(../Componentes/assets/fonts/asap-italic-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-medio';
+    src: url(../Componentes/assets/fonts/asap-medium-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-regular';
+    src: url(../Componentes/assets/fonts/asap-regular-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-semibold';
+    src: url(../Componentes/assets/fonts/asap-semibold-webfont.woff) format('woff');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: static;
+    background: #d7d7d7;
+}
+.conteudo{
+    width: 100%;
+}
+/* -------------- HEADER ---------------------- */
+.header-fazer-pedido{
+    height: 266px;
+    margin-top: 70px;
+    background-image: url("../Componentes/assets/images/header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.feedback-tela-acessibilidade{
+    display: block;
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+.header-fazer-pedido > .header-fazer-pedido-titulo > h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Asap-bold';
+    color: white;
+}
+.header-fazer-pedido > .header-fazer-pedido-titulo > p{
+    font-size: 28px;
+    font-family: 'Asap-regular';
+    text-align: center;
+    color: white;
+    
+}
+.header-fazer-pedido-nav{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(135deg, #8360c8, #a61071);
+}
+
+.header-fazer-pedido-nav-logo{
+    height: 70px;
+}
+
+.header-fazer-pedido-nav-conteudo-navbar-links>a{
+    display: block;
+    float: left;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    margin: 20px;
+    font-family: "Aller-regular"; 
+}
+
+.header-fazer-pedido-nav-conteudo-navbar-links>a:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+.header-fazer-pedido-nav-conteudo-navbar-login>a{
+    display: block;
+    float: left;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    margin: 10px;
+    font-family: "Aller-regular"; 
+}
+
+.header-fazer-pedido-nav-conteudo-navbar-login>a:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+.header-fazer-pedido-nav-conteudo-navbar-pesquisa > .pesquisa {
+    display: block;
+    float: left;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: none;
+    color: black;
+    font-family: "Aller-regular";     
+    margin-right: 5px;
+}
+
+.header-fazer-pedido-nav-conteudo-navbar-pesquisa > .botao{
+    display: block;
+    float: left;
+    border-radius: 50px;
+    padding: 10px 13px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-family: "Aller-regular";
+    cursor: pointer;
+}
+
+ /* ---------- CARD FAZER PEDIDO ----------- */
+.cadastrar{
+    width: 100%;
+}
+.cadastrar > .card-cadastrar{
+    width: 70%;
+    padding: 50px 0;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    margin: 60px auto;
+    box-shadow: 0 0 20px rgb(70, 70, 70);
+    display: flex;
+    justify-content: center;
+}
+.cadastrar > .card-cadastrar > form{
+    width: 70%;
+}
+.titulo{
+    font-family: aller-regular;
+    font-size: 21px;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-family: "Aller-regular";
+    font-size: 20px;
+    color: black;
+}
+.input-select{
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-family: "Aller-regular";
+    font-size: 20px;
+    color: black;
+}
+.input-descricao{
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border: white;
+    border-radius: 30px;
+    padding: 30px 30px;
+    margin: 20px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: black;
+    resize: none;
+}
+
+.dados-invalidos{
+    font-family: Aller-Regular;
+    color: red;
+    margin: 10px 0; 
+}
+
+.botoes-fazer-pedido{
+    display: flex;
+}
+
+.botoes-fazer-pedido ul{
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes-fazer-pedido ul li{
+    float: left;
+}
+
+.botao-fazer-pedido{
+    background: linear-gradient(90deg, #8360c8, #a61071);
+    border: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 5px 5px;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+}
+
+.botao-fazer-pedido:hover{
+    background: white;
+    color: black;
+    transition: 300ms;
+}
+
+.botao-cancelar{
+    color: #a61071;
+    background: rgb(245, 245, 245);
+    border: 2px solid #a61071;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 5px 0px;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    cursor: pointer;
+    margin-right: 17px;
+}
+
+.botao-cancelar:hover{
+    border: 2px solid rgb(245, 245, 245);
+    background: linear-gradient(90deg, #8360c8, #a61071);
+    color: white;
+    transition: 300ms;
+}
+
+.voltar{
+    display: block;
+    border: 3px solid #232323;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 40px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+}
+
+.voltar:hover{
+    background-color: white;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+/* -------- FOOTER -------------------- */
+
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color: rgb(30, 30, 30);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-grupo{
+    display: inline-block;
+    margin: 20px;
+    margin-right: 70px;
+}
+
+.footer-grupo-titulo{
+    display: block;
+    margin-bottom: 30px;
+    align-content: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Aller-bold";
+}
+
+.footer-grupo>ul{
+    list-style-type: none;
+}
+
+.footer-grupo>ul>li{
+    margin-bottom: 10px;
+}
+
+.footer-grupo>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-family: "Aller-regular";
+    font-size: 13px;
+}
+
+.footer-coluna2-logo{
+    height: 110px;
+}
+
+.footer-logo{
+    margin-left: 120px;
+}
+
+.footer-logo>span{
+    display: block;
+    color: white;
+    font-family: "Aller-regular";
+    font-size: 11px;
+    text-align: center;
+}
