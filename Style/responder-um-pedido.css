@@ -1,0 +1,386 @@
+/* Página SCRIPT */
+
+/* FONTES =============================================================== */
+@font-face{
+    font-family: 'Aller-bold';
+    src: url(../Componentes/assets/fonts/aller_bd-webfont.woff ) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-bold-italico';
+    src: url(../Componentes/assets/fonts/aller_bdit-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-italico';
+    src: url(../Componentes/assets/fonts/aller_it-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-light';
+    src: url(../Componentes/assets/fonts/aller_lt-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-light-italico';
+    src: url(../Componentes/assets/fonts/aller_ltit-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Aller-regular';
+    src: url(../Componentes/assets/fonts/aller_rg-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-bold';
+    src: url(../Componentes/assets/fonts/asap-bold-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-bold-italico';
+    src: url(../Componentes/assets/fonts/asap-bolditalic-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-italico';
+    src: url(../Componentes/assets/fonts/asap-italic-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-medio';
+    src: url(../Componentes/assets/fonts/asap-medium-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-regular';
+    src: url(../Componentes/assets/fonts/asap-regular-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Asap-semibold';
+    src: url(../Componentes/assets/fonts/asap-semibold-webfont.woff) format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: static;
+    background: #d7d7d7;
+}
+.script-conteudo{
+    width: 100%;
+}
+
+/* HEADER =============================================================== */
+.script-header{
+    height: 266px;
+    margin-top: 70px;
+    background-image: url("../Componentes/assets/images/header3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.feedback-tela-acessibilidade{
+    display: block;
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+.script-header > .enviarscript-header-titulo > h2{
+    color: white;
+    font-size: 60px;
+    font-family: 'Aller-bold';
+    text-align: center;
+}
+.script-header > .enviarscript-header-titulo > p{
+    color: white;
+    font-size: 28px;
+    font-family: 'Aller-regular';
+    text-align: center;
+}
+.script-header-nav{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(90deg, #48c0b6, #215caa);
+    box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.25);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.script-header-nav-logo{
+    height: 70px;
+}
+
+.script-header-nav-conteudo-navbar-links>a{
+    display: block;
+    float: left;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    margin: 20px;
+    font-family: "Aller-regular";
+}
+
+.script-header-nav-conteudo-navbar-links>a:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+.script-header-nav-conteudo-navbar-login>a{
+    display: block;
+    float: left;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    margin: 10px;
+    font-family: "Aller-regular"; 
+}
+
+.script-header-nav-conteudo-navbar-login>a:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    
+}
+
+.script-header-nav-conteudo-navbar-pesquisa > .pesquisa {
+    display: block;
+    float: left;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: none;
+    color: black;
+    font-family: "Aller-regular";     
+    margin-right: 5px;
+}
+
+.script-header-nav-conteudo-navbar-pesquisa > .botao{
+    display: block;
+    float: left;
+    border-radius: 50px;
+    padding: 10px 13px;
+    border: 2px solid white;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-family: "Aller-regular";
+    cursor: pointer;
+}
+
+/* CARD ================================================================= */
+
+.enviarscript-conteudo{
+    width: 100%;
+}
+.enviarscript-conteudo > .card-script{
+    width: 950px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    margin: 60px auto;
+    box-shadow: 0 0 20px rgb(70, 70, 70);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.script-conteudo-card p{
+    margin-top: 20px;
+}
+.script-conteudo-card ul{
+    margin-top: 40px;
+}
+.enviarscript-conteudo .card-script .script-conteudo-card{
+    width: 850px;
+    margin: 30px 0px;
+}
+.titulo-card{
+    font-family: "Aller-bold";
+}
+.titulo-script, .categoria-script, .descricao-script, .input-script {
+    font-family: "Aller-regular";
+}
+
+.input-descricao{
+    display: block;
+    width: 88%;
+    height: 200px;
+    background-color: white;
+    border: white;
+    border-radius: 30px;
+    padding: 30px 30px;
+    margin: 20px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: rgb(0, 0, 0);
+    /* resize: none;  */
+}
+
+.form{
+    margin-bottom: 20px;
+}
+
+.input{
+    display: block;
+    width: 90%;
+    background-color: white;
+    border: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: black; 
+}
+
+select{
+    display: block;
+    width: 95%;
+    background-color: white;
+    border: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: black; 
+}
+
+.dados-invalidos-titulo, .dados-invalidos-categoria, .dados-invalidos-descricao, .dados-invalidos-input{
+    font-family: "Aller-regular";
+    color: red;
+    padding: 0 auto;
+    display: none;
+}
+
+.botao-enviar{
+    display: block;
+    background: linear-gradient(90deg, #48c0b6, #215caa);
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.botao-enviar:hover{
+    background: none;
+    border: 2px solid #215caa;
+    color: #215caa;
+    transition: 300ms;
+}
+
+input::-webkit-file-upload-button{
+    border-radius: 50px;
+    background: none;
+    border: 2px solid black;
+    color: black;
+}
+
+
+
+
+
+
+
+
+.botoes-script li{
+    list-style-type: none;
+    float: left;
+}
+.botoes-script li a{
+    text-decoration: none;
+    font-family: "Aller-regular";
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(90deg, #48c0b6, #215caa);
+    padding: 10px 20px;
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 50px;
+    margin: 5px;
+    display: block;
+}
+.botoes-script li a:hover{
+    background: none;
+    border: 2px solid #215caa;
+    color: #215caa;
+}
+
+/* FOOTER =============================================================== */
+.script-footer{
+    width: 100%;
+    height: 230px;
+    background-color: rgb(30, 30, 30);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.script-grupo{
+    display: inline-block;
+    margin: 20px;
+    margin-right: 70px;
+}
+
+.script-grupo-titulo{
+    display: block;
+    margin-bottom: 30px;
+    align-content: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Aller-bold";
+}
+
+.script-grupo>ul{
+    list-style-type: none;
+}
+
+.script-grupo>ul>li{
+    margin-bottom: 10px;
+}
+
+.script-grupo>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-family: "Aller-regular";
+    font-size: 13px;
+}
+
+.script-coluna2-logo{
+    height: 110px;
+}
+
+.script-logo{
+    margin-left: 120px;
+}
+
+.script-logo>span{
+    display: block;
+    color: white;
+    font-family: "Aller-regular";
+    font-size: 11px;
+    text-align: center;
+}
