@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./Scripts/Bibliotecas/shortcut.js"></script>
     <link rel="stylesheet" href="./Style/explorar.css">
     <title>Explorar</title>
 </head>
 <body>
+    <span class="feedback-tela-acessibilidade">Você está na tela explorar.</span>
     <header class="header-explorar">
-            <nav class="header-explorar-nav">
-                <a href="./index.html"><img class="header-explorar-nav-logo" src="/projeto2-stakeholders/Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+        <nav class="header-explorar-nav">
+            <a href="./index.html"><img alt="A marca do Stakeholders." class="header-explorar-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+            
+            <div class="header-explorar-nav-conteudo-navbar-links">
+                <a href="./explorar.html">Explorar</a>
+                <a href="./pedidos.html">Pedidos</a>
+            </div>
+
+            <div class="header-explorar-nav-conteudo-navbar-pesquisa">
+                <span class="feedback-tela-acessibilidade">Digite em seguida sua dúvida: </span>
+                <input placeholder="Pesquisar" class="pesquisa"> 
+                <button class="botao"> IR </button>
+            </div>
                 
-                    
-                    <div class="header-explorar-nav-conteudo-navbar-links">
-                        <a href="./explorar.html">Explorar</a>
-                        <a href="./pedidos.html">Pedidos</a>
-                    </div>
-        
-                    <div class="header-explorar-nav-conteudo-navbar-pesquisa">
-                        <input placeholder="Pesquisar" class="pesquisa"> 
-                        <button class="botao"> IR </button>
-                    </div>
-                        
-                    <div class="header-explorar-nav-conteudo-navbar-login">
-                    <a href="">Entrar</a>
-                    <a href="">Cadastrar-se</a>
-        
-                    </div>
-                </nav>
+            <div class="header-explorar-nav-conteudo-navbar-login">
+                <a href="">Entrar</a>
+                <a href="">Cadastrar-se</a>
+            </div>
+        </nav>
         <div class="explorar-header-titulo">
             <h2>Explorar</h2>
-            <p>Aqui você pode procurar Scripts de acesso. Pedidos e os desenvolvedores<br>que contribuem com o site. Qual deseja acessar?</p>
+            <p>Aqui você pode procurar Scripts, Pedidos e os desenvolvedores<br>que contribuem com o site. Qual deseja acessar?</p>
         </div>
     </header>
     <div class="conteudo">
@@ -41,10 +43,11 @@
         <button class="botao-pedidos">
             Pedidos
         </button>
-        <button class="botao-dev" onclick="window.location.href='./explorar-desenvolvedores.html'">
+        <button class="botao-dev">
             Desenvolvedores
         </button>
     </div>
+    <button class="voltar">Voltar</button>
     <footer class="footer">
             <div class="footer-container">
                 <div class="footer-grupo">
@@ -73,9 +76,10 @@
                 </div>
             </div>
             <div class="footer-logo">
-                <img src="/projeto2-stakeholders/Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
+                <img src="./Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
                 <span>©2018 Todos os direitos reservados</span>
             </div>
-        </footer>
+    </footer>
+    <script src="./Scripts/explorar.js"></script>
 </body>
 </html>

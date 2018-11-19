@@ -395,7 +395,6 @@ function addEventListenerAuxCadastroCheckboxes2(){
     });
 }
 
-/* AINDA FALTA MUDAR ISSO AQUI */
 function checkarUsuarioLogado(){
     if(localStorage.getItem("idUsuarioLogado")){
         window.location.href = "./index.html";

@@ -18,6 +18,7 @@ $(document).keydown(function(e) {
             //window.location.href = "./fazer-pedido.html";
         } else if(map[18] && map[48]){
             window.location.href = "./entrar.html";
+            //setTimeout(()=>{$('#email').focus();}, 3000); ver como fazer isso depois
         }
     }
 }).keyup(function(e) {

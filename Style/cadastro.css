@@ -135,7 +135,7 @@ body{
     background-color: none;
     color: white;
     margin: 20px;
-    font-family: "Aller-regular"; 
+    font-family: "Aller-regular";
 }
 
 .usuario-logado{
@@ -373,12 +373,11 @@ hr{
     margin: 40px auto;
     font-family: "Aller-regular";
     font-size: 21px;
+    cursor: pointer;
 }
 
 .voltar:hover{
-    background-color: white;
     transition: 300ms;
-    cursor: pointer;
 }
     
 
