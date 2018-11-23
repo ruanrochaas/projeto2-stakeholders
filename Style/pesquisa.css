@@ -169,7 +169,7 @@ body button {
   cursor: pointer;
 }
 
-.header-pesquisa .header-pesquisa-nav-conteudo-navbar-links > a, .header-pesquisa .header-pesquisa-nav-conteudo-navbar-login > a {
+.header-pesquisa .header-pesquisa-nav-conteudo-navbar-links > a{
   display: block;
   float: left;
   border-radius: 50px;
@@ -179,6 +179,19 @@ body button {
   background-color: none;
   color: white;
   margin: 20px;
+  font-family: "Aller-regular";
+}
+
+.header-pesquisa .header-pesquisa-nav-conteudo-navbar-login > a {
+  display: block;
+  float: left;
+  border-radius: 50px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  text-decoration: none;
+  background-color: none;
+  color: white;
+  margin: 10px;
   font-family: "Aller-regular";
 }
 

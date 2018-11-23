@@ -66,7 +66,16 @@
 }
 body{
     position: static;
+    background: #d7d7d7;
 }
+
+.feedback-tela-acessibilidade{
+    display: block;
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
 .header-home{
     width: 100%;
 }
@@ -100,7 +109,7 @@ body{
     position: absolute;
     top: 0;
     background: linear-gradient(90deg, #8360c8, #a61071);
-    box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.25);
+    box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.3);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -111,8 +120,10 @@ body{
 }
 
 .header-pedidos-nav-conteudo-navbar-links>a{
+    display: block;
+    float: left;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px 20px; 
     border: 2px solid white;
     text-decoration: none;
     background-color: none;
@@ -128,6 +139,8 @@ body{
 }
 
 .header-pedidos-nav-conteudo-navbar-login>a{
+    display: block;
+    float: left;
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -146,16 +159,21 @@ body{
 }
 
 .header-pedidos-nav-conteudo-navbar-pesquisa > .pesquisa {
+    display: block;
+    float: left;
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
     text-decoration: none;
     background-color: none;
     color: black;
-    font-family: "Aller-regular";                
+    font-family: "Aller-regular";
+    margin-right: 5px;                
 }
 
 .header-pedidos-nav-conteudo-navbar-pesquisa > .botao{
+    display: block;
+    float: left;
     border-radius: 50px;
     padding: 10px 13px;
     border: 2px solid white;
@@ -180,15 +198,15 @@ body{
     position: relative;
 }
 .botao-fazer-pedido{
+    display: block;
     border: none;
     color: #ffffff;
     border-radius: 300px;
     padding: 10px 20px;
     background: linear-gradient(135deg, #8360c8, #a61071);
     font-family: "Aller-regular";
-    font-size: 30px;  
-    margin-top: 40px;
-    margin-left: 35vw;
+    font-size: 30px;
+    margin: 40px auto 0 auto;
     width: 395px;
     height: 95px;
 }
@@ -199,9 +217,7 @@ body{
     padding: 10px 20px;
     background: linear-gradient(135deg, #8360c8, #a61071);
     font-family: 'Aller-regular';
-    font-size: 30px;  
-    margin-top: 40px;
-    margin-left: 35vw;
+    font-size: 30px;
     transform: scale(1.1);
     width: 395px;
     height: 95px;
