@@ -2,7 +2,15 @@
   "dados": [
     {
       "ultimoIdUsuario": "2",
-      "id": 0
+      "id": "0"
+    },
+    {
+      "ultimoIdPedido": "0",
+      "id": "1"
+    },
+    {
+      "ultimoIdScript": "0",
+      "id": "2"
     }
   ],
   "usuarios": [
@@ -107,12 +115,6 @@
         {
           "idUsuario": 0,
           "descricao": ""
-        }
-      ],
-      "comentarios": [
-        {
-          "idUsuario": 0,
-          "texto": ""
         }
       ]
     }

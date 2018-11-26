@@ -138,6 +138,12 @@ body{
     color: black;
 }
 
+body > header > nav > div.header-pedidos-nav-conteudo-navbar-links > a:nth-child(2){
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
 .header-pedidos-nav-conteudo-navbar-login>a{
     display: block;
     float: left;
@@ -194,8 +200,8 @@ body{
 
 .conteudo{
     width: 100%;
-    background-color: rgb(245, 245, 245);
     position: relative;
+    margin: 30px 0px;
 }
 .botao-fazer-pedido{
     display: block;
@@ -206,27 +212,21 @@ body{
     background: linear-gradient(135deg, #8360c8, #a61071);
     font-family: "Aller-regular";
     font-size: 30px;
-    margin: 40px auto 0 auto;
-    width: 395px;
-    height: 95px;
-}
-.botao-fazer-pedido:hover{
-    border: none;
-    color: #ffffff;
-    border-radius: 300px;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #8360c8, #a61071);
-    font-family: 'Aller-regular';
-    font-size: 30px;
-    transform: scale(1.1);
+    margin: 10px auto;
     width: 395px;
     height: 95px;
     cursor: pointer;
-
-
+}
+.botao-fazer-pedido:hover{
+    transition: 250ms;
+    border: 3px solid #a61071;
+    color: #a61071;
+    background: #d7d7d7;
+    font-weight: 500;
 }
 
 .botao-meus-pedidos{
+    display: block;
     border: none;
     color: #ffffff;
     border-radius: 300px;
@@ -234,28 +234,22 @@ body{
     background: linear-gradient(135deg, #8360c8, #a61071);
     font-family: 'Aller-regular';
     font-size: 30px;
-    margin-top: 20px;
-    margin-left: 35vw;
-    width: 395px;
+    margin: 10px auto;
     height: 95px;
-}
-.botao-meus-pedidos:hover{
-    border: none;
-    color: #ffffff;
-    border-radius: 300px;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #8360c8, #a61071);
-    font-family: 'Aller-regular';
-    font-size: 30px;  
-    margin-top: 20px;
-    margin-left: 35vw;
-    transform: scale(1.1);
     width: 395px;
-    height: 95px;
     cursor: pointer;
-
 }
+
+.botao-meus-pedidos:hover{
+    transition: 250ms;
+    border: 3px solid #a61071;
+    color: #a61071;
+    background: #d7d7d7;
+    font-weight: 500;
+}
+
 .botao-todos-pedidos{
+    display: block;
     border: none;
     color: #ffffff;
     border-radius: 300px;
@@ -263,28 +257,39 @@ body{
     background: linear-gradient(135deg, #8360c8, #a61071);
     font-family: 'Aller-regular';
     font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-left: 35vw;
-    width: 395px;
+    margin: 10px auto;
     height: 95px;
+    width: 395px;
+    cursor: pointer;
 }
 .botao-todos-pedidos:hover{
-    border: none;
-    color: #ffffff;
-    border-radius: 300px;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #8360c8, #a61071);
-    font-family: 'Aller-regular';
-    font-size: 30px;  
-    margin-top: 20px;
-    margin-left: 35vw;
-    transform: scale(1.1);
-    width: 395px;
-    height: 95px;
-    cursor: pointer;
-
+    transition: 250ms;
+    border: 3px solid #a61071;
+    color: #a61071;
+    background: #d7d7d7;
+    font-weight: 500;
 }
+
+
+.voltar{
+    display: block;
+    border: 3px solid #232323;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 40px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.voltar:hover{
+    border: 3px solid transparent;
+    color: white;
+    background-color: #232323;
+    transition: 300ms;
+    cursor: pointer;
+}
+
 /* SEÇÃO FOOTER =============================================================== */
 
 .footer{

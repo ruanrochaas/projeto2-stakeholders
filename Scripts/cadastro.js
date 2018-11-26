@@ -111,7 +111,7 @@ function cadastrarNovoUsuario(objeto){
         url: url,
         data: objeto,
         success: function() {
-            alert("deu certo!");
+            alert("Cadastro realizado com sucesso!");
         }
     });
 }
