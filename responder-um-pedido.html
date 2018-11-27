@@ -10,7 +10,7 @@
     <title>Stakeholders</title>
 </head>
 <body>
-    <span class="feedback-tela-acessibilidade">Você está na tela de descrição de script.</span>
+    <span class="feedback-tela-acessibilidade">Você está na tela de envio de script.</span>
     <header class="script-header">
 
         <div class="barra-acessibilidade"> 
@@ -48,51 +48,56 @@
         </nav>
         <div class="enviarscript-header-titulo">
             <h2>Enviar um script</h2>
-            <p>Aqui você poderá enviar um script respondendo a um pedido</p>
+            <p>Aqui você poderá enviar um script respondendo a um pedido. Preencha os<br>campos abaixo com os dados do script que voce vai enviar.</p>
         </div>
     </header>
     <div class="enviarscript-conteudo">
         <div class="card-script">
             <div class="script-conteudo-card">
-                <h3 class="titulo-card">
-                    Preencha os campos abaixo com os dados do script que voce vai enviar.
-                </h3>
-                <div class="form" method="post" action="">
+                <form>
                     <p class="titulo-script">
-                        Digite o titulo do script
+                        Para você ter acesso à essa página, você precisa estar cadastrado como usuário desenvolvedor.
                     </p>
-                    <input type="text" class="input">
-                    <span class="dados-invalidos-titulo"> Error </span>
+                    <!-- <input type="text" class="input" placeholder="Título do seu script">
+                    <span class="dados-invalidos invisivel">O campo</span>
+                    
+                    <p class="titulo-script">
+                        Escolha uma rota para o script
+                    </p>
+                    <input type="text" class="input" placeholder="/rota-do-seu-script">
+                    <span class="dados-invalidos invisivel">O campo</span>
 
                     <p class="categoria-script">
                         Selecione a categoria do script
                     </p>
-                    <select name="categoria" class="input-select">
+                    <select name="categoria" class="input input-select">
                         <option value="universidade">Universidade</option>
                         <option value="compras">Compras</option>
                         <option value="viagens">Viagens</option>    
                     </select>
-                    <span class="dados-invalidos-categoria"> Error </span>
+                    <span class="dados-invalidos invisivel"> Error </span>
 
                     <p class="descricao-script">
                         Digite a descrição do script, o passo a passo que ele vai executar
                     </p>
-                    <textarea type="text" class="input-descricao"> </textarea>
-                    <span class="dados-invalidos-descricao"> Error </span>
+                    <textarea type="textarea" class="input input-descricao" placeholder="Descreva detalhadamente o passo-a-passo do que o seu script faz."></textarea>
+                    <span class="dados-invalidos invisivel"> Error </span>
 
                     <p class="input-script">
                         Selecione o script nos seus arquivos e faça o upload
                     </p>
-                    <input type="file" class="input">
-                    <span class="dados-invalidos-input"> Error </span>
+                    <input type="file" class="input input-file">
+                    <span class="dados-invalidos invisivel"> Error </span>
 
-                    <input class="botao-enviar" type="submit" value="Enviar script">
-
-                </div>
-                
+                    <div class="botoes-form">
+                        <button type="submit" class="botao-enviar">Enviar Script</button>
+                        <button type="reset" class="botao-cancelar">Cancelar</button>
+                    </div> -->
+                </form>
             </div>
         </div>
     </div>
+    <button class="voltar">Voltar</button>
     <footer class="script-footer">
         <div class="script-container">
             <div class="script-grupo">
@@ -125,6 +130,6 @@
             <span>©2018 Todos os direitos reservados</span>
         </div>
     </footer>
-    <script src="./Scripts/verScript.js"></script>
+    <script src="./Scripts/responder-pedido.js"></script>
 </body>
 </html>

@@ -94,16 +94,15 @@ body{
 }
 
 .barra-acessibilidade > ul > li > a{
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 5px;
     margin: 10px;
     text-decoration: none;
-    border-radius: 50px
 }
 
 .barra-acessibilidade > ul > li > a:hover{
     color: white;
-    border: 2px solid white;
+    font-weight: 600;
 }
 
 /* HEADER =============================================================== */
@@ -164,12 +163,14 @@ body{
     color: white;
     margin: 20px;
     font-family: "Aller-regular";
+    transition: background-color 300ms;
 }
 
 .script-header-nav-conteudo-navbar-links>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
+    transition: background-color 300ms;
 }
 
 .script-header-nav-conteudo-navbar-login>a{
@@ -183,12 +184,14 @@ body{
     color: white;
     margin: 10px;
     font-family: "Aller-regular"; 
+    transition: background-color 300ms;
 }
 
 .script-header-nav-conteudo-navbar-login>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
+    transition: background-color 300ms;
     
 }
 
@@ -224,7 +227,7 @@ body{
     width: 100%;
 }
 .enviarscript-conteudo > .card-script{
-    width: 950px;
+    width: 900px;
     background-color: rgb(245, 245, 245);
     border-radius: 20px;
     margin: 60px auto;
@@ -234,109 +237,110 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.script-conteudo-card p{
+
+.script-conteudo-card{
+    width: 800px;
+}
+
+.script-conteudo-card > form{
+    margin: 50px 0;
+}
+
+.script-conteudo-card > form > p{
+    font-family: "Aller-regular";
+    font-size: 21px;
     margin-top: 20px;
 }
-.script-conteudo-card ul{
-    margin-top: 40px;
-}
-.enviarscript-conteudo .card-script .script-conteudo-card{
-    width: 850px;
-    margin: 30px 0px;
-}
-.titulo-card{
-    font-family: "Aller-bold";
-}
-.titulo-script, .categoria-script, .descricao-script, .input-script {
-    font-family: "Aller-regular";
-}
 
-.input-descricao{
+.script-conteudo-card > form > .dados-invalidos{
     display: block;
-    width: 88%;
-    height: 200px;
-    background-color: white;
-    border: white;
-    border-radius: 30px;
-    padding: 30px 30px;
-    margin: 20px auto;
     font-family: "Aller-regular";
-    font-size: 21px;
-    color: rgb(0, 0, 0);
-    /* resize: none;  */
-}
-
-.form{
-    margin-bottom: 20px;
-}
-
-.input{
-    display: block;
-    width: 90%;
-    background-color: white;
-    border: white;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin: 10px auto;
-    font-family: "Aller-regular";
-    font-size: 21px;
-    color: black; 
-}
-
-select{
-    display: block;
-    width: 95%;
-    background-color: white;
-    border: white;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin: 10px auto;
-    font-family: "Aller-regular";
-    font-size: 21px;
-    color: black; 
-}
-
-.dados-invalidos-titulo, .dados-invalidos-categoria, .dados-invalidos-descricao, .dados-invalidos-input{
-    font-family: "Aller-regular";
+    font-size: 16px;
     color: red;
-    padding: 0 auto;
+    margin: 5px 0;
+}
+
+.script-conteudo-card > form > .dados-invalidos.invisivel{
     display: none;
 }
 
-.botao-enviar{
+.script-conteudo-card > form > input, textarea, select{
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.input-descricao{
+    height: 200px;
+    color: rgb(0, 0, 0);
+    resize: none; 
+}
+
+.script-conteudo-card > form > .input-file{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 0px;
+}
+
+input::-webkit-file-upload-button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: none;
+    border: 2px solid #232323;
+    color: #232323;
+}
+
+input::-webkit-file-upload-button:hover{
+    background: #232323;
+    border: 2px solid rgb(245, 245, 245);
+    color: white;
+}
+
+.botoes-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.botoes-form > button{
     display: block;
     background: linear-gradient(90deg, #48c0b6, #215caa);
-    border: 2px solid white;
+    border: 2px solid rgb(245, 245, 245);
     border-radius: 50px;
     padding: 10px 20px;
-    margin: 20px auto;
+    margin: 5px 5px;
     font-family: "Aller-regular";
     font-size: 21px;
     color: white;
     cursor: pointer;
+    box-sizing: border-box;
     transition: 300ms;
 }
 
-.botao-enviar:hover{
-    background: none;
+.botoes-form > .botao-cancelar{
+    background: transparent;
     border: 2px solid #215caa;
     color: #215caa;
-    transition: 300ms;
 }
 
-input::-webkit-file-upload-button{
-    border-radius: 50px;
-    background: none;
-    border: 2px solid black;
-    color: black;
+.botoes-form > .botao-cancelar:hover{
+    background: linear-gradient(90deg, #48c0b6, #215caa);
+    border: 2px solid rgb(245, 245, 245);
+    color: white;
 }
 
-
-
-
-
-
-
+.botoes-form > .botao-enviar:hover{
+    background: transparent;
+    border: 2px solid #215caa;
+    color: #215caa;
+}
 
 .botoes-script li{
     list-style-type: none;
@@ -358,6 +362,25 @@ input::-webkit-file-upload-button{
     background: none;
     border: 2px solid #215caa;
     color: #215caa;
+}
+
+.voltar{
+    display: block;
+    border: 3px solid #232323;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 40px auto;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    transition: 300ms;
+}
+
+.voltar:hover{
+    border: 3px solid transparent;
+    color: white;
+    background-color: #232323;
+    transition: 300ms;
+    cursor: pointer;
 }
 
 /* FOOTER =============================================================== */
