@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./Scripts/Bibliotecas/shortcut.js"></script>
     <link rel="stylesheet" href="./Style/todos-pedidos.css">
     <title>Todos os pedidos</title>
 </head>
 <body>
+    <span class="feedback-tela-acessibilidade">Você está na tela todos os pedidos.</span>
     <header class="header-todos-pedidos">
+
+        <div class="barra-acessibilidade"> 
+            <ul id="atalhos">  
+                <li><a href="#iniciodoconteudo">Ir para o conteúdo</a></li>  
+                <li><a href="#busca">Ir para a pesquisa</a></li>  
+                <li><a href="#iniciodorodape">Ir para o rodapé</a></li>  
+            </ul>  
+            <ul id="botoes">  
+                <li><a href=""> Aumentar letra + </a></li>         
+                <li><a href=""> Diminuir letra - </a></li>         
+                <li><a href="#" id="bt_contraste">Alto contraste</a></li>  
+                <li><a href="mapa.html"> Mapa do site </a></li>  
+            </ul>
+        </div>
+        
         <nav class="header-todos-pedidos-nav">
-            <a href="./index.html"><img class="header-todos-pedidos-nav-logo" src="/Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+            <a href="./index.html"><img class="header-todos-pedidos-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
                 
                 <div class="header-todos-pedidos-nav-conteudo-navbar-links">
                     <a href="./explorar.html">Explorar</a>
@@ -18,6 +36,7 @@
                 </div>
     
                 <div class="header-todos-pedidos-nav-conteudo-navbar-pesquisa">
+                    <span class="feedback-tela-acessibilidade">Digite em seguida sua dúvida: </span>
                     <input placeholder="Pesquisar" class="pesquisa"> 
                     <button class="botao"> IR </button>
                 </div>
@@ -30,113 +49,22 @@
             </nav>
     <div class="header-todos-pedidos-titulo">
         <h2>Pedidos</h2>
-        <p>Aqui você encontra todos os pedidos</p>
+        <p>Aqui estão listados todos os pedidos que ainda não foram atendidos</p>
     </div>
-</header>
-<div class="conteudo">
-        <div class="todos-pedidos-card">
-            <div class="todos-pedidos-card card-conteudo">
-                <div class="todos-pedidos-card card-conteudo-textos">
-                    <h3 class="titulo-bloco">
-                        Buscar notícias da TV Redes Mares no G1
-                    </h3>
-                    <h4 class="categoria-bloco">
-                        Categoria Entretenimento
-                    </h4>
-                    <br>
-                    <p class="descricao-script">
-                        Gostaria de acessar as notícias da região da minha cidade, mas não consigo acessar por ser um menu de casca e ter várias categorias.
-                    </p>
-                    <br>
-                    <p class="status-script">
-                        <b>Status:</b> não atendido
-                    </p>
-                </div>
-                <div class="div-botoes-bloco-texto">
-                    <button class="button button-atender">
-                        Atender
-                    </button>
-                    <button class="button button-comentar">
-                        Comentar
-                    </button>
-                    <button class="button button-mais-detalhes">
-                        Mais detalhes
-                    </button>
-                </div>
-            </div>
+    </header>
+    <div class="conteudo">
+        <div class="container-pedidos todos-pedidos-card">
         </div>
-        <div class="todos-pedidos-card">
-                    <div class="todos-pedidos-card card-conteudo">
-                        <div class="todos-pedidos-card card-conteudo-textos">
-                            <h3 class="titulo-bloco">
-                                Buscar notícias da TV Redes Mares no G1
-                            </h3>
-                            <h4 class="categoria-bloco">
-                                Categoria Entretenimento
-                            </h4>
-                            <br>
-                            <p class="descricao-script">
-                                Gostaria de acessar as notícias da região da minha cidade, mas não consigo acessar por ser um menu de casca e ter várias categorias.
-                            </p>
-                            <br>
-                            <p class="status-script">
-                                <b>Status:</b> não atendido
-                            </p>
-                        </div>
-                        <div class="div-botoes-bloco-texto">
-                            <button class="button button-atender">
-                                Atender
-                            </button>
-                            <button class="button button-comentar">
-                                Comentar
-                            </button>
-                            <button class="button button-mais-detalhes">
-                                Mais detalhes
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="todos-pedidos-card">
-                        <div class="todos-pedidos-card  card-conteudo">
-                            <div class="todos-pedidos-card card-conteudo-textos">
-                                <h3 class="titulo-bloco">
-                                    Buscar notícias da TV Redes Mares no G1
-                                </h3>
-                                <h4 class="categoria-bloco">
-                                    Categoria Entretenimento
-                                </h4>
-                                <br>
-                                <p class="descricao-script">
-                                    Gostaria de acessar as notícias da região da minha cidade, mas não consigo acessar por ser um menu de casca e ter várias categorias.
-                                </p>
-                                <br>
-                                <p class="status-script">
-                                    <b>Status:</b> não atendido
-                                </p>
-                            </div>
-                            <div class="div-botoes-bloco-texto">
-                                <button class="button button-atender">
-                                    Atender
-                                </button>
-                                <button class="button button-comentar">
-                                    Comentar
-                                </button>
-                                <button class="button button-mais-detalhes">
-                                    Mais detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
         <button class="carregar-mais">
             Carregar mais
         </button>
         <div class="botao-voltar">
-            <button class="voltar" onclick="window.location.href='./explorar.html'">
+            <button class="voltar">
                 Voltar
             </button>
         </div>
-</div>
-<footer class="footer">
+    </div>
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-grupo">
                 <a href="" class="footer-grupo-titulo" >Sobre nós</a>
@@ -164,10 +92,10 @@
             </div>
         </div>
         <div class="footer-logo">
-            <img src="/Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
+            <img src="./Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
             <span>©2018 Todos os direitos reservados</span>
         </div>
     </footer>
-    
+    <script src="./Scripts/todos-pedidos.js"></script>
 </body>
 </html>

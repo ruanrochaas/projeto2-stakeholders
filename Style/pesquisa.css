@@ -76,7 +76,7 @@ body span {
   max-height: 0;
 }
 
-body .voltar {
+.voltar{
   display: block;
   border: 3px solid #232323;
   border-radius: 50px;
@@ -87,9 +87,12 @@ body .voltar {
   cursor: pointer;
 }
 
-body .voltar:hover {
-  -webkit-transition: 300ms;
+.voltar:hover{
+  border: 3px solid transparent;
+  color: white;
+  background-color: #232323;
   transition: 300ms;
+  cursor: pointer;
 }
 
 body button {
@@ -98,7 +101,7 @@ body button {
 
 .header-pesquisa {
   height: 266px;
-  margin-top: 70px;
+  margin-top: 100px;
   background-image: url("../Componentes/assets/images/header4.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -123,7 +126,7 @@ body button {
   width: 100%;
   height: 70px;
   position: absolute;
-  top: 0;
+  top: 30px;
   background: -webkit-gradient(linear, left top, right top, from(#ff7376), to(#b3208c));
   background: linear-gradient(90deg, #ff7376, #b3208c);
   -webkit-box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.25);
@@ -445,5 +448,37 @@ body button {
   font-family: "Aller-regular";
   font-size: 11px;
   text-align: center;
+}
+
+.barra-acessibilidade{
+    top: 0;
+    position: absolute;
+    background: rgb(70, 70, 70);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    font-family: "Aller-regular";
+}
+
+.barra-acessibilidade > ul{
+    list-style-type: none;
+    display: flex;
+    padding: 85px;
+}
+
+.barra-acessibilidade > ul > li > a{
+    color: rgba(255, 255, 255, .8);
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.barra-acessibilidade > ul > li > a:hover{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
 }
 /*# sourceMappingURL=pesquisa.css.map */

@@ -58,9 +58,9 @@ function criarForm(){
                         <p class="dados-invalidos invisivel"></p>
                         <p class="titulo">Selecione categoria</p>
                         <select name="categorias" class="input-select" id="categoria" required>
-                            <option value="universidade">Universidade</option>
-                            <option value="compras">Compras</option>
-                            <option value="viagens">Viagens</option>
+                            <option value="Universidade">Universidade</option>
+                            <option value="Compras">Compras</option>
+                            <option value="Viagens">Viagens</option>
                         </select>
                         <p class="titulo">Qual é o endereço URL (Link) do site onde será realizada a automação?</p>
                         <input type="url" placeholder="Exemplo: https://twitter.com" class="input" id="url" required>
@@ -144,7 +144,7 @@ function criarObjeto(titulo, url, descricao, categorias){
                     "categorias": categorias,
                     "url": url,
                     "descricao": descricao,
-                    "status": "Não recebido",
+                    "status": "Não atendido",
                     "gosteis": 0,
                     "idQuemGostou": ",",
                     "foiDenunciado": false,

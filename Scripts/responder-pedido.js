@@ -17,8 +17,43 @@ function checkarUsuarioValido(){
     return valido;
 }
 
+function tituloPedido(){
+    let url = "http://localhost:3000/pedidos/" + localStorage.getItem("verPedidoId");
+    let titulo = "";
+    $.ajax({
+        type: 'GET',
+        url: url,
+        success: function(data) {
+            titulo = data.titulo;
+        },
+        async: false
+    });
+    return titulo;
+}
+
+function mudarStatusPedido(){
+    let url = "http://localhost:3000/pedidos/" + localStorage.getItem("verPedidoId");
+    $.ajax({
+        type: 'GET',
+        url: url,
+        success: function(data) {
+            let objeto = data;
+            objeto.status = "Atendido";
+            $.ajax({
+                url: url,
+                type: 'PUT',
+                data: objeto
+            });
+        },
+        async: false
+    });
+}
+
 function criarForm(){
-    let form = `<p class="titulo-script">
+    let form = `<p class="titulo-pedido">
+                    Você está respondendo ao pedido de nome: 
+                </p>
+                <p class="titulo-script">
                     Digite abaixo o titulo do script
                 </p>
                 <input type="text" class="input" placeholder="Título do seu script" id="titulo">
@@ -60,6 +95,9 @@ function criarForm(){
     let formContainer = $('.script-conteudo-card > form');
     formContainer.html(form);
 
+    let idPedido = $('.titulo-pedido');
+    idPedido.html("Você está respondendo ao pedido de nome: <b>" + tituloPedido() + "<b>");
+
     let botoes = $('.botoes-form > button');
 
     botoes[0].addEventListener("click", ()=>{
@@ -70,6 +108,7 @@ function criarForm(){
         let descricao = $('#descricao').val();
 
         if(cadastroValido()){
+            mudarStatusPedido();
             cadastrarNovoScript(criarObjeto(titulo,rota,descricao,categoria));
         } else {
             alert('Dados inválidos.');

@@ -81,7 +81,7 @@ body{
 /* HEADER =============================================================== */
 .cadastrar-header{
     height: 266px;
-    margin-top: 70px;
+    margin-top: 100px;
     background-image: url("../Componentes/assets/images/header2.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ body{
     width: 100%;
     height: 70px;
     position: absolute;
-    top: 0;
+    top: 30px;
     background: linear-gradient(90deg, #7a60c5, #215caa);
     box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.25);
     display: flex;
@@ -136,6 +136,7 @@ body{
     color: white;
     margin: 20px;
     font-family: "Aller-regular";
+    transition: 300ms;
 }
 
 .usuario-logado{
@@ -150,12 +151,14 @@ body{
     margin: 20px;
     font-family: "Aller-regular";
     text-align: center;
+    transition: 300ms;
 }
 
 .cadastrar-header-nav-conteudo-navbar-links>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
+    transition: 300ms;
 }
 
 .cadastrar-header-nav-conteudo-navbar-login>a{
@@ -169,6 +172,7 @@ body{
     color: white;
     margin: 10px;
     font-family: "Aller-regular"; 
+    transition: 300ms;
 }
 
 body > header > nav > div.cadastrar-header-nav-conteudo-navbar-login > a:nth-child(2){
@@ -180,6 +184,7 @@ body > header > nav > div.cadastrar-header-nav-conteudo-navbar-login > a:nth-chi
     color: black;
     margin: 10px;
     font-family: "Aller-regular"; 
+    transition: 300ms;
 }
 
 .cadastrar-header-nav-conteudo-navbar-login>a:hover{
@@ -364,7 +369,6 @@ hr{
     transition: 300ms;
 }
 
-
 .voltar{
     display: block;
     border: 3px solid #232323;
@@ -377,7 +381,11 @@ hr{
 }
 
 .voltar:hover{
+    border: 3px solid transparent;
+    color: white;
+    background-color: #232323;
     transition: 300ms;
+    cursor: pointer;
 }
     
 
@@ -534,4 +542,37 @@ hr{
 
 .container-div{
     width: 430px;
+}
+
+
+.barra-acessibilidade{
+    top: 0;
+    position: absolute;
+    background: rgb(70, 70, 70);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    font-family: "Aller-regular";
+}
+
+.barra-acessibilidade > ul{
+    list-style-type: none;
+    display: flex;
+    padding: 85px;
+}
+
+.barra-acessibilidade > ul > li > a{
+    color: rgba(255, 255, 255, .8);
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.barra-acessibilidade > ul > li > a:hover{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
 }

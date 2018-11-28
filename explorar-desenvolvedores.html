@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./Scripts/Bibliotecas/shortcut.js"></script>
     <link rel="stylesheet" href="./Style/explorar-desenvolvedores.css">
     <title>Desenvolvedores</title>
 </head>
 <body>
+    <span class="feedback-tela-acessibilidade">Você está na tela de descrição de script.</span>
     <header class="header-dev">
+
+        <div class="barra-acessibilidade"> 
+            <ul id="atalhos">  
+                <li><a href="#iniciodoconteudo">Ir para o conteúdo</a></li>  
+                <li><a href="#busca">Ir para a pesquisa</a></li>  
+                <li><a href="#iniciodorodape">Ir para o rodapé</a></li>  
+            </ul>  
+            <ul id="botoes">  
+                <li><a href=""> Aumentar letra + </a></li>         
+                <li><a href=""> Diminuir letra - </a></li>         
+                <li><a href="#" id="bt_contraste">Alto contraste</a></li>  
+                <li><a href="mapa.html"> Mapa do site </a></li>  
+            </ul>
+        </div>
+        
         <nav class="header-dev-nav">
-            <a href="./index.html"><img class="header-dev-nav-logo" src="/projeto2-stakeholders/Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+            <a href="./index.html"><img class="header-dev-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
                 
                 <div class="header-dev-nav-conteudo-navbar-links">
                     <a href="./explorar.html">Explorar</a>
@@ -18,6 +36,7 @@
                 </div>
     
                 <div class="header-dev-nav-conteudo-navbar-pesquisa">
+                    <span class="feedback-tela-acessibilidade">Digite em seguida sua dúvida: </span>
                     <input placeholder="Pesquisar" class="pesquisa"> 
                     <button class="botao"> IR </button>
                 </div>
@@ -134,7 +153,7 @@
                 </div>
             </div>
             <div class="footer-logo">
-                <img src="/projeto2-stakeholders/Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
+                <img src="./Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
                 <span>©2018 Todos os direitos reservados</span>
             </div>
         </footer>

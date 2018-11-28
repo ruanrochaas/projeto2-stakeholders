@@ -1,6 +1,6 @@
 
 
-let urlScripts = "http://localhost:3000/scripts?_sort=id&_order=desc&_limit=1";
+let urlScripts = "http://localhost:3000/scripts?_sort=id&_order=desc";
 
 function pegarScriptsEmAlta(){
     let xhttp = new XMLHttpRequest();
@@ -8,7 +8,7 @@ function pegarScriptsEmAlta(){
     xhttp.onload = function(){
         if (this.status == 200) {
             let listaResposta = JSON.parse(this.responseText);
-            for (let index = 0; index < 1; index++) {
+            for (let index = 0; index < 2; index++) {
                 const objeto = listaResposta[index];
                 cardsScripts(objeto, 0);
             };
@@ -18,7 +18,7 @@ function pegarScriptsEmAlta(){
     xhttp.send();
 }
 
-let urlPedidos = "http://localhost:3000/pedidos?_sort=id&_order=desc&_limit=1";
+let urlPedidos = "http://localhost:3000/pedidos?_sort=id&_order=desc";
 
 function pegarPedidosEmAlta(){
     let xhttp = new XMLHttpRequest();
@@ -26,7 +26,7 @@ function pegarPedidosEmAlta(){
     xhttp.onload = function(){
         if (this.status == 200) {
             let listaResposta = JSON.parse(this.responseText);
-            for (let index = 0; index < 1; index++) {//aumentar iterações para 2
+            for (let index = 0; index < 2; index++) {//aumentar iterações para 2
                 const objeto = listaResposta[index];
                 cardsScripts(objeto, 1);
             };
@@ -37,13 +37,7 @@ function pegarPedidosEmAlta(){
 }
 
 function formarStringCategorias(objeto){
-    let string = "Categorias:"
-    let listaCateg = objeto.categorias.split(",");
-
-    for(let indice = 1; indice < listaCateg.length; indice++){
-        string += " ";
-        string += listaCateg[indice];
-    }
+    let string = "Categorias: " + objeto.categorias;
     return string;
 }
 
@@ -51,19 +45,21 @@ function formarBotCarregarMais(id){
     let scripts = document.querySelector(".scripts");
     let pedidos = document.querySelector(".pedidos");
     let bot3 = document.createElement("button");
-    let textoBot3 = document.createTextNode("Carregar Mais");
-
-    bot3.addEventListener("click", ()=>{
-        event.preventDefault();
-        alert('Ainda não implementado.');
-    });
-
-    bot3.classList.add("carregar-mais");
-    bot3.appendChild(textoBot3);
+    let textoBot3 = document.createTextNode("Ver Mais");
 
     if(id == 0){
+        bot3.classList.add("carregar-mais-scripts");
+        bot3.appendChild(textoBot3);
+        bot3.addEventListener("click", ()=>{
+            window.location.href = "./scripts.html";
+        });
         scripts.appendChild(bot3);
     }else{
+        bot3.classList.add("carregar-mais-pedidos");
+        bot3.appendChild(textoBot3);
+        bot3.addEventListener("click", ()=>{
+            window.location.href = "./todos-pedidos.html";
+        });
         pedidos.appendChild(bot3);
     }
 }
@@ -99,8 +95,8 @@ function cardsScripts(objeto, num) {
         bot1.classList.add("botao-mais-detalhes");
         bot2.classList.add("botao-mostrar-relacionados");
     } else {
-        bot1.classList.add("botao-mais-detalhes");
-        bot2.classList.add("botao-mostrar-relacionados");    
+        bot1.classList.add("botao-mais-detalhes-pedidos");
+        bot2.classList.add("botao-mostrar-relacionados-pedidos");    
     }
 
     if (num == 0) {
@@ -147,15 +143,34 @@ function cardsScripts(objeto, num) {
     }
 }
 
-function checkarUsuarioLogado(){
-    if(localStorage.getItem("idUsuarioLogado")){
+function checkarUsuarioValido(){
+    let url = "http://localhost:3000/usuarios";
+    let id = localStorage.getItem("idUsuarioLogado");
+    let valido = false;
+    $.ajax({
+        type: 'GET',
+        url: url,
+        success: function(data) {
+            for(let usuario of data){
+                if(usuario.id == id){
+                    valido = true;
+                }
+            }
+        },
+        async: false
+    });
+    return valido;
+}
+
+function checkarUsuarioLogado(valido){
+    if (valido) {
         let cadastrarNav = $(".header-home-nav-conteudo-navbar-login");
         cadastrarNav[0].innerHTML = "";
         let a = document.createElement("a");
         let a2 = document.createElement("a");
 
         a.innerText = "Meu menu";
-        a.setAttribute("href","");
+        a.setAttribute("href","./biblioteca.html");
         a2.innerText = localStorage.getItem("nomeUsuarioLogado");
         a2.setAttribute("href","");
 
@@ -165,13 +180,20 @@ function checkarUsuarioLogado(){
             window.location.reload();
         });
 
+        a2.addEventListener("mouseover", ()=>{
+            a2.innerText = "Logout";
+        });
+
+        a2.addEventListener("mouseout", ()=>{
+            a2.innerText = localStorage.getItem("nomeUsuarioLogado");
+        });
+
         cadastrarNav[0].appendChild(a);
         cadastrarNav[0].appendChild(a2);
     }
 }
 
 
-
-checkarUsuarioLogado();
+checkarUsuarioLogado(checkarUsuarioValido());
 pegarScriptsEmAlta();
 pegarPedidosEmAlta();

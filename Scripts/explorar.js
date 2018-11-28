@@ -25,8 +25,7 @@ function addEventListenerBotoesCont(){
     let botoesCont = $(".conteudo button");
 
     botoesCont[0].addEventListener("click", ()=>{
-        //window.location.href='./explorar-desenvolvedores.html';
-        alert("Ainda não implementado.");
+        window.location.href='./scripts.html';
     });
 
     botoesCont[1].addEventListener("click", ()=>{

@@ -12,8 +12,23 @@
 <body>
     <span class="feedback-tela-acessibilidade">Você está na tela inicial.</span>
     <header class="header-home">
+
+        <div class="barra-acessibilidade"> 
+            <ul id="atalhos">  
+                <li><a href="#conteudo">Ir para o conteúdo</a></li>  
+                <li><a href="">Ir para a pesquisa</a></li>  
+                <li><a href="">Ir para o rodapé</a></li>  
+            </ul>  
+            <ul id="botoes">  
+                <li><a href=""> Aumentar letra + </a></li>         
+                <li><a href=""> Diminuir letra - </a></li>         
+                <li><a href="#" id="bt_contraste">Alto contraste</a></li>  
+                <li><a href="mapa.html"> Mapa do site </a></li>  
+            </ul>
+        </div>
+    
         <nav class="header-home-nav">
-            <a href="./index.html"><img alt="A marca do Stakeholders." class="header-home-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+            <a href="./index.html"><img alt="A marca do Stakeholders."  id="conteudo" class="header-home-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
             
             <div class="header-home-nav-conteudo-navbar-links">
                 <a href="./explorar.html">Explorar</a>
@@ -32,8 +47,9 @@
             </div>
         </nav>
         <div class="header-home-titulo">
-            <h1>Bem-vindo ao<br>Stakeholders</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, sapiente quaerat inventore, beatae perferendis quisquam repudiandae atque iste</p>
+            <div><h1>Bem-vindo ao Stakeholders</h1></div>
+            <span class="feedback-tela-acessibilidade">Imagem com três pessoas felizes sentadas segurando seus notebooks em seus colos. Elas estão conversando entre si. Ao fundo, paisagem com campo aberto e árvores.</span>
+            <p>Olá, somos uma ferramenta colaborativa que busca melhorar e facilitar a navegação<br>na web para deficientes visuais, através do uso de scripts de automação.</p>
         </div>
     </header>
     <div class="conteudo">

@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./Scripts/Bibliotecas/shortcut.js"></script>
-    <link rel="stylesheet" href="./Style/pedidos.css">
-    <title>Pedidos</title>
+    <link rel="stylesheet" href="./Style/todos-scripts.css">
+    <title>Todos os scripts</title>
 </head>
 <body>
-    <span class="feedback-tela-acessibilidade">Você está na tela pedidos.</span>
-    <header class="header-pedidos">
+    <span class="feedback-tela-acessibilidade">Você está na tela todos os scripts.</span>
+    <header class="header-todos-scripts">
 
         <div class="barra-acessibilidade"> 
             <ul id="atalhos">  
@@ -26,43 +26,44 @@
                 <li><a href="mapa.html"> Mapa do site </a></li>  
             </ul>
         </div>
+        
+        <nav class="header-todos-scripts-nav">
+            <a href="./index.html"><img class="header-todos-scripts-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+                
+                <div class="header-todos-scripts-nav-conteudo-navbar-links">
+                    <a href="./explorar.html">Explorar</a>
+                    <a href="./pedidos.html">Pedidos</a>
+                </div>
     
-        <nav class="header-pedidos-nav">
-            <a href="./index.html"><img class="header-pedidos-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
-                
-            <div class="header-pedidos-nav-conteudo-navbar-links">
-                <a href="./explorar.html">Explorar</a>
-                <a href="./pedidos.html">Pedidos</a>
-            </div>
-
-            <div class="header-pedidos-nav-conteudo-navbar-pesquisa">
-                <span class="feedback-tela-acessibilidade">Digite em seguida sua dúvida: </span>
-                <input placeholder="Pesquisar" class="pesquisa"> 
-                <button class="botao"> IR </button>
-            </div>
-                
-            <div class="header-pedidos-nav-conteudo-navbar-login">
-                <a href="">Entrar</a>
-                <a href="">Cadastrar-se</a>
-            </div>
-        </nav>
-        <div class="pedidos-header-titulo">
-            <h2>Pedidos</h2>
-            <p>Aqui você pode fazer um novo pedido, conferir os pedidos<br>que já fez e os pedidos que outros suários solicitaram</p>
-        </div>
+                <div class="header-todos-scripts-nav-conteudo-navbar-pesquisa">
+                    <span class="feedback-tela-acessibilidade">Digite em seguida sua dúvida: </span>
+                    <input placeholder="Pesquisar" class="pesquisa"> 
+                    <button class="botao"> IR </button>
+                </div>
+                    
+                <div class="header-todos-scripts-nav-conteudo-navbar-login">
+                <a href="./entrar.html">Entrar</a>
+                <a href="./cadastro.html">Cadastrar-se</a>
+    
+                </div>
+            </nav>
+    <div class="header-todos-scripts-titulo">
+        <h2>Scripts</h2>
+        <p>Aqui estão listados todos os scripts do Stakeholders</p>
+    </div>
     </header>
     <div class="conteudo">
-        <button class="botao-fazer-pedido" onclick="window.location.href='./pedidos-fazer_um.html'">
-            Fazer pedido
+        <div class="container-scripts todos-scripts-card">
+        </div>
+        <button class="carregar-mais">
+            Carregar mais
         </button>
-        <button class="botao-meus-pedidos" onclick="alert('Ainda não implementado')">
-            Meus pedidos
-        </button>
-        <button class="botao-todos-pedidos" onclick="window.location.href='./todos-pedidos.html'">
-            Todos os pedidos
-        </button>
+        <div class="botao-voltar">
+            <button class="voltar">
+                Voltar
+            </button>
+        </div>
     </div>
-    <button class="voltar">Voltar</button>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grupo">
@@ -95,6 +96,6 @@
             <span>©2018 Todos os direitos reservados</span>
         </div>
     </footer>
-    <script src="./Scripts/pedidos.js"></script>
+    <script src="./Scripts/todos-scripts.js"></script>
 </body>
 </html>

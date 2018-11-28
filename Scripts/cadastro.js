@@ -112,6 +112,7 @@ function cadastrarNovoUsuario(objeto){
         data: objeto,
         success: function() {
             alert("Cadastro realizado com sucesso!");
+            window.location.href = "./entrar.html";
         }
     });
 }

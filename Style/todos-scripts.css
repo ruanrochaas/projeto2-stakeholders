@@ -1,4 +1,4 @@
-/* Página explorar dos desenvolvedores */
+/* Página meus scripts */
 
 /* FONTES =============================================================== */
 @font-face{
@@ -67,13 +67,21 @@
 }
 body{
     position: static;
+    background-color: #d7d7d7;
+
 }
-.header-dev{
+.feedback-tela-acessibilidade{
+    display: block;
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+.header-todos-scripts{
     height: 266px;
-    margin-top: 70px;
+    margin-top: 100px;
     background-image: url("../Componentes/assets/images/header3.png");
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     align-items: center;
     display: flex;
@@ -81,23 +89,23 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.header-dev > .header-dev-titulo > h2{
+.header-todos-scripts > .header-todos-scripts-titulo > h2{
     color: white;
     font-size: 60px;
     font-family: 'Aller-bold';
     text-align: center;
 }
-.header-dev > .header-dev-titulo > p{
+.header-todos-scripts > .header-todos-scripts-titulo > p{
     color: white;
     font-size: 28px;
     font-family: 'Aller-regular';
     text-align: center;
 }
-.header-dev-nav{
+.header-todos-scripts-nav{
     width: 100%;
     height: 70px;
     position: absolute;
-    top: 0;
+    top: 30px;
     background: linear-gradient(90deg, #48c0b6, #215caa);
     box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.25);
     display: flex;
@@ -105,11 +113,11 @@ body{
     align-items: center;
 }
 
-.header-dev-nav-logo{
+.header-todos-scripts-nav-logo{
     height: 70px;
 }
 
-.header-dev-nav-conteudo-navbar-links>a{
+.header-todos-scripts-nav-conteudo-navbar-links>a{
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -118,15 +126,17 @@ body{
     color: white;
     margin: 20px;
     font-family: "Aller-regular"; 
+    transition: 300ms;
 }
 
-.header-dev-nav-conteudo-navbar-links>a:hover{
+.header-todos-scripts-nav-conteudo-navbar-links>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
+    transition: 300ms;
 }
 
-.header-dev-nav-conteudo-navbar-login>a{
+.header-todos-scripts-nav-conteudo-navbar-login>a{
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -135,16 +145,18 @@ body{
     color: white;
     margin: 10px;
     font-family: "Aller-regular"; 
+    transition: 300ms;
 }
 
-.header-dev-nav-conteudo-navbar-login>a:hover{
+.header-todos-scripts-nav-conteudo-navbar-login>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
+    transition: 300ms;
     
 }
 
-.header-dev-nav-conteudo-navbar-pesquisa > .pesquisa {
+.header-todos-scripts-nav-conteudo-navbar-pesquisa > .pesquisa {
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -154,7 +166,7 @@ body{
     font-family: "Aller-regular";                
 }
 
-.header-dev-nav-conteudo-navbar-pesquisa > .botao{
+.header-todos-scripts-nav-conteudo-navbar-pesquisa > .botao{
     border-radius: 50px;
     padding: 10px 13px;
     border: 2px solid white;
@@ -173,83 +185,72 @@ body{
     background-color: #d7d7d7;
 }
 
-.dev-card{
+.meus-scripts-card{
     padding: 20px;
 }
-.dev-card-conteudo{
+.card-conteudo{
     text-align: left;
     color: #232323;
     box-shadow: 0 0 20px rgb(70, 70, 70);
     box-sizing: border-box;
     border-radius: 20px;
-    width: 1000px;
-    height: 300px;
+    width: 950px;
     background: rgb(245, 245, 245);
     margin: 0px auto;
     margin-top: 40px;
     padding: 30px;
 }
 
-.dev-card-conteudo-textos{
-    height: 130px;
-}
-
 .titulo-bloco{
-    font-size: 25px;
+    font-size: 21px;
     margin-bottom: 10px;
     font-family: "Aller-regular";
+    font-weight: bold;
 }
 
 .categoria-bloco{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
     margin-bottom: 10px;
     font-family: "Aller-regular";
 }
-
-/* .subtitulo-bloco{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    font-family: "Aller-regular";
-} */
 
 .descricao-script{
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Aller-regular";
-    color: rgb(31, 31, 31);
 }
 
-.like{
-    font-size: 20px;
+.status-script{
+    font-size: 18px;
+    font-weight: 400;
     margin-bottom: 10px;
-    font-family: "Aller-bold";
+    font-family: "Aller-regular";
 }
-.nao-like{
-    margin-left: 30px;
+
+.div-botoes-bloco-texto{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .button{
-    border: none;
-    color: #ffffff;
+    display: block;
+    background: linear-gradient(90deg, #48c0b6, #215caa);
+    border: 3px solid rgb(245, 245, 245);
     border-radius: 50px;
     padding: 10px 20px;
-    background: linear-gradient(90deg, #48c0b6, #215caa);
+    margin: 5px 5px;
     font-family: "Aller-regular";
-    font-size: 21px;  
-    margin: auto 20px;
-    margin-top: 70px;
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
 }
 
 .button:hover{
-    background: #d7d7d7;
+    background: transparent;
     color: #215caa;
     border: 3px solid #215caa;
     transition: 500ms;
-    transform: scale(1.1);
-}
-.div-botoes-bloco-texto{
-    text-align: center;
 }
 
 .carregar-mais {
@@ -346,4 +347,36 @@ body{
     font-family: "Aller-regular";
     font-size: 11px;
     text-align: center;
+}
+
+.barra-acessibilidade{
+    top: 0;
+    position: absolute;
+    background: rgb(70, 70, 70);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    font-family: "Aller-regular";
+}
+
+.barra-acessibilidade > ul{
+    list-style-type: none;
+    display: flex;
+    padding: 85px;
+}
+
+.barra-acessibilidade > ul > li > a{
+    color: rgba(255, 255, 255, .8);
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.barra-acessibilidade > ul > li > a:hover{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
 }

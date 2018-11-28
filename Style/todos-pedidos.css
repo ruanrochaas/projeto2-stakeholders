@@ -70,9 +70,15 @@ body{
     background-color: #d7d7d7;
 
 }
+.feedback-tela-acessibilidade{
+    display: block;
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
+}
 .header-todos-pedidos{
     height: 266px;
-    margin-top: 70px;
+    margin-top: 100px;
     background-image: url("../Componentes/assets/images/header.png");
     background-size: cover;
     background-position: center;
@@ -99,7 +105,7 @@ body{
     width: 100%;
     height: 70px;
     position: absolute;
-    top: 0;
+    top: 30px;
     background: linear-gradient(90deg, #8360c8, #a61071);
     box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.25);
     display: flex;
@@ -120,12 +126,14 @@ body{
     color: white;
     margin: 20px;
     font-family: "Aller-regular"; 
+    transition: 300ms;
 }
 
 .header-todos-pedidos-nav-conteudo-navbar-links>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
+    transition: 300ms;
 }
 
 .header-todos-pedidos-nav-conteudo-navbar-login>a{
@@ -137,12 +145,14 @@ body{
     color: white;
     margin: 10px;
     font-family: "Aller-regular"; 
+    transition: 300ms;
 }
 
 .header-todos-pedidos-nav-conteudo-navbar-login>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
+    transition: 300ms;
     
 }
 
@@ -184,15 +194,66 @@ body{
     box-shadow: 0 0 20px rgb(70, 70, 70);
     box-sizing: border-box;
     border-radius: 20px;
-    width: 1000px;
-    height: 340px;
+    width: 950px;
     background: rgb(245, 245, 245);
     margin: 0px auto;
     margin-top: 40px;
     padding: 30px;
 }
 
-.card-conteudo-textos{
+.titulo-bloco{
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-family: "Aller-regular";
+    font-weight: bold;
+}
+
+.categoria-bloco{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Aller-regular";
+}
+
+.descricao-script{
+    font-size: 18px;
+    font-family: "Aller-regular";
+}
+
+.status-script{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: "Aller-regular";
+}
+
+.div-botoes-bloco-texto{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button{
+    display: block;
+    background: linear-gradient(90deg, #8360c8, #a61071);
+    border: 3px solid rgb(245, 245, 245);
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 5px 5px;
+    font-family: "Aller-regular";
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.button:hover{
+    background: transparent;
+    color: #a61071;
+    border: 3px solid #a61071;
+    transition: 500ms;
+}
+
+/* .card-conteudo-textos{
     height: 130px;
 }
 
@@ -209,13 +270,6 @@ body{
     font-family: "Aller-regular";
 }
 
-/* .subtitulo-bloco{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    font-family: "Aller-regular";
-} */
-
 .descricao-script{
     font-size: 17px;
     font-family: "Aller-regular";
@@ -229,29 +283,27 @@ body{
     font-family: "Aller-regular";
 }
 .button{
-    border: none;
+    display: block;
+    border: 3px solid transparent;
     color: #ffffff;
     border-radius: 50px;
     padding: 10px 20px;
     background: linear-gradient(90deg, #7a60c5, #a61071);
     font-family: "Aller-regular";
-    font-size: 21px;  
-    margin: auto 20px;
-    margin-top: 70px;
+    font-size: 21px;
 }
 
 .button:hover{
-    background: #d7d7d7;
+    background: transparent;
     color: #a61071;
     border: 3px solid #a61071;
     transition: 500ms;
-    transform: scale(1.1);
 }
 
 .div-botoes-bloco-texto{
     text-align: center;
 }
-
+ */
 .carregar-mais {
     display: block;
     border: 3px solid #232323;
@@ -346,4 +398,36 @@ body{
     font-family: "Aller-regular";
     font-size: 11px;
     text-align: center;
+}
+
+.barra-acessibilidade{
+    top: 0;
+    position: absolute;
+    background: rgb(70, 70, 70);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    font-family: "Aller-regular";
+}
+
+.barra-acessibilidade > ul{
+    list-style-type: none;
+    display: flex;
+    padding: 85px;
+}
+
+.barra-acessibilidade > ul > li > a{
+    color: rgba(255, 255, 255, .8);
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.barra-acessibilidade > ul > li > a:hover{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
 }
