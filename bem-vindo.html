@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,23 @@
     <title>Bem vindo ao Stakeholders</title>
 </head>
 <body>
-    <span class="feedback-tela-acessibilidade">Você está na página fazer um pedido.</span>
+    <span class="feedback-tela-acessibilidade">Você está na tela de tutorial.</span>
     <header class="header-fazer-pedido">
+
+        <div class="barra-acessibilidade" style="display:none;"> 
+            <ul id="atalhos">  
+                <li><a href="#iniciodoconteudo">Ir para o conteúdo</a></li>  
+                <li><a href="#busca">Ir para a pesquisa</a></li>  
+                <li><a href="#iniciodorodape">Ir para o rodapé</a></li>  
+            </ul>  
+            <ul id="botoes">  
+                <li><a href=""> Aumentar letra + </a></li>         
+                <li><a href=""> Diminuir letra - </a></li>         
+                <li><a href="#" id="bt_contraste">Alto contraste</a></li>  
+                <li><a href="mapa.html"> Mapa do site </a></li>  
+            </ul>
+        </div>
+        
         <nav class="header-fazer-pedido-nav">
             <a href="./index.html"><img alt="A marca do Stakeholders." class="header-fazer-pedido-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
             
@@ -33,30 +48,27 @@
         </nav>
         <div class="header-fazer-pedido-titulo">
             <h1>Bem vindo</h1>
-            <p>Parabens, agora você faz parte da maior rede colaborativa<br> de compartilhamento de scripts.</p>
+            <p>Parabéns, agora você faz parte da maior rede colaborativa<br> de compartilhamento de scripts.</p>
         </div>
     </header>
     <div class="cadastrar">
         <div class="card-cadastrar">
             <form>
                 <div class="conteudo-info">
-                    <p class="titulo"> Agora vamos conhecer um pouco mais sobre como pensamos a navegação para voce deficiente visual</p>
-                    
-                    <p class="titulo"> Entendendo como funciona a nossa navegação:
+                    <p class="titulo">Essa rede colaborativa foi construída de maneira que todas as informações presentes nela possam ser acessadas através das setas direcionais do teclado.
                     </p>
 
                     <br>
-
-                    <p class="titulo">
-                        Se você for deficiente visual, criamos alguns atalhos de navegação e visualização para você: <br>
+                    <p class="titulo">O primeiro passo é conhecer um pouco mais sobre como projetamos a navegação para você.
+                        Pensando em facilitá-la ao máximo, criamos a lista de atalhos abaixo: <br>
                     </p>
 
                     <br>  
 
                     <p class="titulo">
-                        alt + ‘ = tutorial <br>
-                        alt + 1 = voltar<br>
-                        alt + 2 = biblioteca<br>
+                        alt + apóstofro = tutorial<br>
+                        alt + 1 = biblioteca<br>
+                        alt + 2 = voltar<br>
                         alt + 3 = scripts<br>
                         alt + 4 = pedidos<br>
                         alt + 5 = busca<br>
@@ -68,40 +80,43 @@
                     </p>
                     <br>
                     <p class="titulo">
-                        Caso você queira acessar essa lista de atalhos novamente é só ir no link tutorial no footer.
+                        Caso você queira acessar essa lista de atalhos novamente é só acessar o link tutorial no footer ou utilizar o atalho Alt + apóstrofo.
+                    </p>
+
+                    <br>
+                    <p class="titulo">
+                        Se você precisa entender melhor coisas como: o que é a automação de navegador; o que são scripts, <a href="" style="display:inline-block;" onclick="alert('Ainda não implementado');">clique aqui</a>.
                     </p>
 
                     <br>
 
                     <p class="titulo">
-                        Se você for um vidente a sua navegação vai ser simples e intuitiva visualmente.
+                        Se você for um desenvolvedor, lembre-se que precisa utilizar o pacote do Node.js chamado Puppeteer para criar e executar os scripts, <a href="" style="display:inline-block;" onclick="alert('Ainda não implementado');">clique aqui</a> para saber mais.
                     </p>
 
                     <br>
 
                     <p class="titulo">
-                        Se você for um desenvolvedor, precisa utilizar a biblioteca Node e Puppeteer, clique aqui para saber mais.
+                        Caso você queira mudar as teclas dos atalhos <a href="" style="display:inline-block;" onclick="alert('Ainda não implementado');">clique aqui</a>.
                     </p>
 
                     <br>
 
                     <p class="titulo">
-                        Caso você queira mudar as teclas dos atalhos clique aqui.
+                        Ficamos muito felizes por você querer fazer parte do Stakeholders.<br>Caso surja alguma dúvida, não deixe de entrar em contato através do email: contato@stakeholders.com.br
                     </p>
 
                     <br>
 
                     <p class="titulo">
-                        Ficamos muito felizes por você querer fazer parte do Stakeholders. 
+                        Atenciosamente,<br>Equipe Stakeholders.
                     </p>
-
-                    <br>
                     
                 </div>
             </form>
         </div>
     </div>
-    <a class="irpara" >Ir para tela inicial</a>
+    <a class="irpara" href="./index.html">Ir para tela inicial</a>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grupo">
@@ -133,7 +148,7 @@
             <img src="./Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
             <span>©2018 Todos os direitos reservados</span>
         </div>
-        <script src="./Scripts/fazerPedido.js"></script>
     </footer>
+    <script src="./Scripts/bem-vindo.js"></script>
 </body>
 </html>

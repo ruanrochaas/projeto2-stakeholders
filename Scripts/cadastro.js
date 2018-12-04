@@ -89,7 +89,7 @@ function formarObjeto(id, nome, email, senha, desenvolvedor, categorias){
         "desenvolvedor": desenvolvedor,
         "foto": "",
         "categoriasFav": categorias2,
-        "bibliotecaIdScripts": "",
+        "bibliotecaIdScripts": ",",
         "listaIdPedidosCriados": "",
         "qtdPedidosCriados": 0,
         "listaIdScriptsCriados": "",

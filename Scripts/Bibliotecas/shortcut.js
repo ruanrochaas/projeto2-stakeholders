@@ -3,9 +3,9 @@ $(document).keydown(function(e) {
     if (e.keyCode in map) {
         map[e.keyCode] = true;
         if(map[18] && map[192]){
-            //window.location.href = "./biblioteca-rapida.html";
+            window.location.href = "./bem-vindo.html";
         }else if (map[18] && map[49]) {
-            //window.location.href = "./ajuda.html";
+            window.location.href = "./biblioteca.html";
         } else if(map[18] && map[50]){
             window.history.back();
         } else if(map[18] && map[51]){

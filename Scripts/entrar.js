@@ -10,7 +10,7 @@ function addEventListenerBotaoLogar(){
             if(objResposta.confirmado){
                 localStorage.setItem("nomeUsuarioLogado",objResposta.nome);
                 localStorage.setItem("idUsuarioLogado",objResposta.id);
-                window.location.href = './index.html';
+                window.location.href = './bem-vindo.html';
             } else {
                 feedbackComplementaresDeLogin2(objResposta.feedback);
             }

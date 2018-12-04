@@ -146,6 +146,7 @@ function criarCardScript(objeto){
         };
         
         adicionarScriptNaBiblioteca();
+        alert('Script adicionado à sua biblioteca.');
     });
 
     botoes[2].addEventListener("click", ()=>{
@@ -222,8 +223,14 @@ function checkarUsuarioLogado(){
         let a = document.createElement("a");
         let a2 = document.createElement("a");
 
+        let span = document.createElement("span");
+        let feedback = document.createTextNode("Clique no seu nome a seguir para fazer logout:");
+
+        span.classList.add("feedback-tela-acessibilidade");
+        span.appendChild(feedback);
+
         a.innerText = "Meu menu";
-        a.setAttribute("href","");
+        a.setAttribute("href","./biblioteca.html");
         a2.innerText = localStorage.getItem("nomeUsuarioLogado");
         a2.setAttribute("href","");
 
@@ -233,7 +240,16 @@ function checkarUsuarioLogado(){
             window.location.reload();
         });
 
+        a2.addEventListener("mouseover", ()=>{
+            a2.innerText = "Logout";
+        });
+
+        a2.addEventListener("mouseout", ()=>{
+            a2.innerText = localStorage.getItem("nomeUsuarioLogado");
+        });
+
         cadastrarNav[0].appendChild(a);
+        cadastrarNav[0].appendChild(span);
         cadastrarNav[0].appendChild(a2);
     }
 }

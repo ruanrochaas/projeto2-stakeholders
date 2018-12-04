@@ -88,6 +88,7 @@ body{
 }
 .feedback-tela-acessibilidade{
     display: block;
+    float: left;
     max-width: 0;
     max-height: 0;
     overflow: hidden;
@@ -131,14 +132,14 @@ body{
     color: white;
     margin: 20px;
     font-family: "Aller-regular";
-    transition: 300ms;
+    transition: background-color 300ms;
 }
 
 .script-header-nav-conteudo-navbar-links>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
-    transition: 300ms;
+    transition: background-color 300ms;
 }
 
 .script-header-nav-conteudo-navbar-login>a{
@@ -151,15 +152,15 @@ body{
     background-color: none;
     color: white;
     margin: 10px;
-    font-family: "Aller-regular"; 
-    transition: 300ms;
+    font-family: "Aller-regular";
+    transition: background-color 300ms;
 }
 
 .script-header-nav-conteudo-navbar-login>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
-    transition: 300ms;
+    transition: background-color 300ms;
     
 }
 
