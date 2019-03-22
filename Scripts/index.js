@@ -200,7 +200,21 @@ function checkarUsuarioLogado(valido){
     }
 }
 
+function barra_acessibilidade_abrir() {
+    let botao = document.querySelector(".barra-acessibilidade-abrir");
+    let barra = document.querySelectorAll(".barra-acessibilidade ul");
+    console.log(barra[0]);
+    console.log(barra[1]);
+    botao.addEventListener("click", ()=>{
+        event.preventDefault();
+        barra[0].classList.remove("invisivel");
+        barra[1].classList.remove("invisivel");
+        botao.setAttribute("style","display:none");
+    });
+}
+
 
 checkarUsuarioLogado(checkarUsuarioValido());
 pegarScriptsEmAlta();
 pegarPedidosEmAlta();
+barra_acessibilidade_abrir();

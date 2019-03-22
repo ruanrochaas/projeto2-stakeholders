@@ -8,18 +8,20 @@
     <script src="./Scripts/Bibliotecas/shortcut.js"></script>
     <link rel="stylesheet" href="./Style/index.css">
     <title>Stakeholders</title>
+    <link rel="icon" type="image/gif" href="./Componentes/assets/images/fav-animated.gif">
 </head>
 <body>
     <span class="feedback-tela-acessibilidade">Você está na tela inicial.</span>
     <header class="header-home">
 
-        <div class="barra-acessibilidade" style="display:none;"> 
-            <ul id="atalhos">  
+        <div class="barra-acessibilidade">
+            <a href="" class="barra-acessibilidade-abrir">Abrir Barra de Acessibilidade</a>
+            <ul class="barra invisivel">  
                 <li><a href="#conteudo">Ir para o conteúdo</a></li>  
                 <li><a href="">Ir para a pesquisa</a></li>  
                 <li><a href="">Ir para o rodapé</a></li>  
             </ul>  
-            <ul id="botoes">  
+            <ul class="barra invisivel">  
                 <li><a href=""> Aumentar letra + </a></li>         
                 <li><a href=""> Diminuir letra - </a></li>         
                 <li><a href="#" id="bt_contraste">Alto contraste</a></li>  
@@ -49,7 +51,7 @@
         <div class="header-home-titulo">
             <div><h1>Bem-vindo ao Stakeholders</h1></div>
             <span class="feedback-tela-acessibilidade">Imagem com três pessoas felizes sentadas segurando seus notebooks em seus colos. Elas estão conversando entre si. Ao fundo, paisagem com campo aberto e árvores.</span>
-            <p>Olá, somos uma ferramenta colaborativa que busca melhorar e facilitar a navegação<br>na web para deficientes visuais, através do uso de scripts de automação.</p>
+            <p>Olá, somos uma ferramenta colaborativa que busca melhorar e facilitar a navegação na web para deficientes visuais, através do uso de scripts de automação.</p>
         </div>
     </header>
     <div class="conteudo">
@@ -73,7 +75,7 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grupo">
-                <a href="#" class="footer-grupo-titulo" onclick="alert('Função ainda não implementada'); event.preventDefault();">Sobre nós</a>
+                <a class="footer-grupo-titulo">Sobre nós</a>
                 <ul>
                     <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Quem somos</a></li>
                     <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Identidade visual</a></li>
@@ -81,7 +83,7 @@
                 </ul>
             </div>
             <div class="footer-grupo">
-                <a href="#" class="footer-grupo-titulo" onclick="alert('Função ainda não implementada'); event.preventDefault();">FAQ</a>
+                <a class="footer-grupo-titulo">FAQ</a>
                 <ul>
                     <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">O que é um script?</a></li>
                     <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Duvidas frequentes</a></li>
@@ -89,7 +91,7 @@
                 </ul>
             </div>
             <div class="footer-grupo">
-                <a href="#" class="footer-grupo-titulo" onclick="alert('Função ainda não implementada'); event.preventDefault();">Contato</a>
+                <a class="footer-grupo-titulo">Contato</a>
                 <ul>
                     <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Facebook</a></li>
                     <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Instagram</a></li>
@@ -98,9 +100,10 @@
             </div>
         </div>
         <div class="footer-logo">
-            <img src="./Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
+            <img alt="A marca do Stakeholders." src="./Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
             <span>©2018 Todos os direitos reservados</span>
         </div>
+        <span class="feedback-tela-acessibilidade">Você chegou ao final dessa página.</span>
         <script src="./Scripts/index.js"></script>
     </footer>
 </body>
