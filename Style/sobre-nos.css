@@ -1,3 +1,5 @@
+/* Página meus pedidos */
+
 /* FONTES =============================================================== */
 @font-face{
     font-family: 'Aller-bold';
@@ -59,31 +61,18 @@
     src: url(../Componentes/assets/fonts/asap-semibold-webfont.woff) format('woff');
 }
 
-
 *{
     margin: 0;
     padding: 0;
 }
 body{
     position: static;
-    background: #d7d7d7;
 }
-
-.feedback-tela-acessibilidade{
-    display: block;
-    float: left;
-    max-width: 0;
-    max-height: 0;
-    overflow: hidden;
-}
-
-.header-home{
-    width: 100%;
-}
-.header-pedidos{
+.header-sobre-nos{
     height: 266px;
-    margin-top: 100px;
-    background-image: url("../Componentes/assets/images/header.png");
+    margin-top: 70px;
+    background-image: url("../Componentes/assets/images/header2.png");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
@@ -92,64 +81,52 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.header-pedidos > .pedidos-header-titulo > h2{
+.header-sobre-nos > .header-sobre-nos-titulo > h2{
     color: white;
     font-size: 60px;
     font-family: 'Aller-bold';
     text-align: center;
 }
-.header-pedidos > .pedidos-header-titulo > p{
+.header-sobre-nos > .header-sobre-nos-titulo > p{
     color: white;
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'Aller-regular';
     text-align: center;
 }
-.header-pedidos-nav{
+.header-sobre-nos-nav{
     width: 100%;
     height: 70px;
     position: absolute;
-    top: 30px;
-    background: linear-gradient(90deg, #8360c8, #a61071);
-    box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.3);
+    top: 0;
+    background: linear-gradient(90deg, #7a60c5, #215caa);
+    box-shadow: 0 2px 100px 15px rgba(50, 50, 50, 0.25);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.header-pedidos-nav-logo{
+.header-sobre-nos-nav-logo{
     height: 70px;
 }
 
-.header-pedidos-nav-conteudo-navbar-links>a{
-    display: block;
-    float: left;
+.header-sobre-nos-nav-conteudo-navbar-links>a{
     border-radius: 50px;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     border: 2px solid white;
     text-decoration: none;
     background-color: none;
     color: white;
     margin: 20px;
     font-family: "Aller-regular"; 
-    transition: 300ms;
 }
 
-.header-pedidos-nav-conteudo-navbar-links>a:hover{
-    border: 2px solid white;
-    background-color: white;
-    color: black;
-    transition: 300ms;
-}
-
-body > header > nav > div.header-pedidos-nav-conteudo-navbar-links > a:nth-child(2){
+.header-sobre-nos-nav-conteudo-navbar-links>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
 }
 
-.header-pedidos-nav-conteudo-navbar-login>a{
-    display: block;
-    float: left;
+.header-sobre-nos-nav-conteudo-navbar-login>a{
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -158,33 +135,26 @@ body > header > nav > div.header-pedidos-nav-conteudo-navbar-links > a:nth-child
     color: white;
     margin: 10px;
     font-family: "Aller-regular"; 
-    transition: 300ms;
 }
 
-.header-pedidos-nav-conteudo-navbar-login>a:hover{
+.header-sobre-nos-nav-conteudo-navbar-login>a:hover{
     border: 2px solid white;
     background-color: white;
     color: black;
-    transition: 300ms;
     
 }
 
-.header-pedidos-nav-conteudo-navbar-pesquisa > .pesquisa {
-    display: block;
-    float: left;
+.header-sobre-nos-nav-conteudo-navbar-pesquisa > .pesquisa {
     border-radius: 50px;
     padding: 10px 20px;
     border: 2px solid white;
     text-decoration: none;
     background-color: none;
     color: black;
-    font-family: "Aller-regular";
-    margin-right: 5px;                
+    font-family: "Aller-regular";                
 }
 
-.header-pedidos-nav-conteudo-navbar-pesquisa > .botao{
-    display: block;
-    float: left;
+.header-sobre-nos-nav-conteudo-navbar-pesquisa > .botao{
     border-radius: 50px;
     padding: 10px 13px;
     border: 2px solid white;
@@ -196,98 +166,109 @@ body > header > nav > div.header-pedidos-nav-conteudo-navbar-links > a:nth-child
 }
 
 
-.footer{
-    width: 100%;
-    height: 200px;
-}
-
-/* SEÇÃO CONTEUDO DOS BOTOES =============================================================== */
+/* SEÇÃO CONTEUDO CARDS =============================================================== */
 
 .conteudo{
     width: 100%;
-    position: relative;
-    margin: 30px 0px;
+    background-color: #d7d7d7;
+    padding: 40px 0 40px 0;
 }
-.botao-fazer-pedido{
-    display: block;
-    border: none;
-    color: #ffffff;
-    border-radius: 300px;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #8360c8, #a61071);
+.sobre-nos-div{
+    text-align: left;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    width: 1000px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    padding: 0px 0 5px 0;
+}
+.sobre-nos-card{
+    padding: 20px;
+}
+.card-conteudo{
+    text-align: left;
+    color: #232323;
+    box-shadow: 0 0 20px rgb(70, 70, 70);
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 1000px;
+    background: rgb(245, 245, 245);
+    margin: 0px auto;
+    padding: 30px;
+}
+
+.titulo-bloco{
+    font-size: 25px;
+    margin-bottom: 10px;
     font-family: "Aller-regular";
-    font-size: 30px;
-    margin: 10px auto;
-    width: 395px;
-    height: 95px;
-    cursor: pointer;
-}
-.botao-fazer-pedido:hover{
-    transition: 400ms;
-    border: 3px solid #a61071;
-    color: #a61071;
-    background: #d7d7d7;
-    font-weight: 500;
 }
 
-.botao-meus-pedidos{
-    display: block;
+.categoria-bloco{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: "Aller-regular";
+}
+
+/* .subtitulo-bloco{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: "Aller-regular";
+} */
+
+.descricao-script{
+    font-size: 17px;
+    font-family: "Aller-regular";
+    color: rgb(31, 31, 31);
+}
+
+.sobre-nos-titulo{
+    color: black;
+    font-size: 32px;
+    font-family: "Aller-regular";
+}
+.texto-sobre-nos{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Aller-light';
+}
+.button{
     border: none;
     color: #ffffff;
-    border-radius: 300px;
+    border-radius: 50px;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #8360c8, #a61071);
-    font-family: 'Aller-regular';
-    font-size: 30px;
-    margin: 10px auto;
-    height: 95px;
-    width: 395px;
-    cursor: pointer;
+    background: linear-gradient(90deg, #7a60c5, #a61071);
+    font-family: "Aller-regular";
+    font-size: 21px;  
+    margin: auto 30px;
+    margin-top: 60px;
 }
 
-.botao-meus-pedidos:hover{
-    transition: 400ms;
-    border: 3px solid #a61071;
-    color: #a61071;
+.button:hover{
     background: #d7d7d7;
-    font-weight: 500;
-}
-
-.botao-todos-pedidos{
-    display: block;
-    border: none;
-    color: #ffffff;
-    border-radius: 300px;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #8360c8, #a61071);
-    font-family: 'Aller-regular';
-    font-size: 30px;
-    margin: 10px auto;
-    height: 95px;
-    width: 395px;
-    cursor: pointer;
-}
-.botao-todos-pedidos:hover{
-    transition: 400ms;
-    border: 3px solid #a61071;
     color: #a61071;
-    background: #d7d7d7;
-    font-weight: 500;
+    border: 3px solid #a61071;
+    transition: 500ms;
+    transform: scale(1.1);
 }
 
+.div-botoes-bloco-texto{
+    text-align: center;
+}
 
-.voltar{
+.carregar-mais {
     display: block;
     border: 3px solid #232323;
     border-radius: 50px;
     padding: 10px 20px;
-    margin: 40px auto;
+    margin: 30px auto;
     font-family: "Aller-regular";
-    font-size: 21px;
-    cursor: pointer;
+    font-size: 21px; 
 }
 
-.voltar:hover{
+.carregar-mais:hover{
     border: 3px solid transparent;
     color: white;
     background-color: #232323;
@@ -295,6 +276,26 @@ body > header > nav > div.header-pedidos-nav-conteudo-navbar-links > a:nth-child
     cursor: pointer;
 }
 
+.botao-voltar{
+    padding-bottom: 10px;
+}
+
+.voltar{
+    display: block;
+    border: 3px solid #232323;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 30px auto;
+    font-family: "Aller-regular";
+    font-size: 21px; 
+}
+
+.voltar:hover{
+    border: 3px solid transparent;
+    color: white;
+    background-color: #232323;
+    transition: 300ms;
+    cursor: pointer;}
 /* SEÇÃO FOOTER =============================================================== */
 
 .footer{
@@ -320,7 +321,7 @@ body > header > nav > div.header-pedidos-nav-conteudo-navbar-links > a:nth-child
     align-content: center;
     text-decoration: none;
     color: white;
-    font-family: 'Aller-bold';
+    font-family: "Aller-bold";
 }
 
 .footer-grupo>ul{
@@ -334,7 +335,7 @@ body > header > nav > div.header-pedidos-nav-conteudo-navbar-links > a:nth-child
 .footer-grupo>ul>li>a{
     text-decoration: none;
     color: white;
-    font-family: 'Aller-regular';
+    font-family: "Aller-regular";
     font-size: 13px;
 }
 
@@ -349,59 +350,7 @@ body > header > nav > div.header-pedidos-nav-conteudo-navbar-links > a:nth-child
 .footer-logo>span{
     display: block;
     color: white;
-    font-family: 'Aller-regular';
+    font-family: "Aller-regular";
     font-size: 11px;
     text-align: center;
-}
-
-.barra-acessibilidade{
-    top: 0;
-    position: absolute;
-    background: rgb(70, 70, 70);
-    height: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
-    list-style-type: none;
-    font-family: "Aller-regular";
-    font-weight: 300;
-}
-
-.barra{
-    list-style-type: none;
-    display: flex;
-}
-
-.barra > li > a{
-    color: rgba(255, 255, 255, .8);
-    padding: 5px;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.barra > li > a:hover{
-    color: rgba(255, 255, 255, 1);
-}
-
-.barra-acessibilidade-abrir{
-    color: rgba(255, 255, 255, .8);
-    padding: 5px;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.barra-acessibilidade-abrir:hover{
-    color: rgba(255, 255, 255, 1);
-}
-
-.invisivel{
-    display: none;
-}
-
-@media screen and (max-width: 1050px) {
-    .header-pedidos-nav, .barra-acessibilidade{
-        width: 1050px;
-    }
 }

@@ -410,7 +410,16 @@ function addEventListenerVoltar(){
     });
 }
 
-
+function barra_acessibilidade_abrir() {
+    let botao = document.querySelector(".barra-acessibilidade-abrir");
+    let barra = document.querySelectorAll(".barra-acessibilidade ul");
+    botao.addEventListener("click", ()=>{
+        event.preventDefault();
+        barra[0].classList.remove("invisivel");
+        barra[1].classList.remove("invisivel");
+        botao.setAttribute("style","display:none");
+    });
+}
 
 checkarUsuarioLogado();
 addEventListenerVoltar();
@@ -420,3 +429,4 @@ addEventListenerAuxCadastroCheckboxes1();
 addEventListenerAuxCadastroCheckboxes2();
 addEventListenerFeedbacks();
 addEventListenerCadastrar();
+barra_acessibilidade_abrir();
