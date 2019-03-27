@@ -334,6 +334,7 @@ body{
     font-family: "Aller-regular";
     font-size: 21px;
     transition: 300ms;
+    text-align: center;
 }
 
 .irpara:hover{
