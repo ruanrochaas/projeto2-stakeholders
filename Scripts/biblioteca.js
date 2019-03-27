@@ -130,8 +130,14 @@ function checkarUsuarioLogado(valido){
         let a = document.createElement("a");
         let a2 = document.createElement("a");
 
+        let span = document.createElement("span");
+        let feedback = document.createTextNode("Clique no seu nome a seguir para fazer logout:");
+
+        span.classList.add("feedback-tela-acessibilidade");
+        span.appendChild(feedback);
+
         a.innerText = "Meu menu";
-        a.setAttribute("href","");
+        a.setAttribute("href","./biblioteca.html");
         a2.innerText = localStorage.getItem("nomeUsuarioLogado");
         a2.setAttribute("href","");
 
@@ -150,6 +156,7 @@ function checkarUsuarioLogado(valido){
         });
 
         cadastrarNav[0].appendChild(a);
+        cadastrarNav[0].appendChild(span);
         cadastrarNav[0].appendChild(a2);
 
         getScriptsBiblioteca();
@@ -164,6 +171,18 @@ function addEventListenerVoltar(){
     });
 }
 
+function barra_acessibilidade_abrir() {
+    let botao = document.querySelector(".barra-acessibilidade-abrir");
+    let barra = document.querySelectorAll(".barra-acessibilidade ul");
+    botao.addEventListener("click", ()=>{
+        event.preventDefault();
+        barra[0].classList.remove("invisivel");
+        barra[1].classList.remove("invisivel");
+        botao.setAttribute("style","display:none");
+    });
+}
+
 
 addEventListenerVoltar();
 checkarUsuarioLogado(checkarUsuarioValido());
+barra_acessibilidade_abrir();

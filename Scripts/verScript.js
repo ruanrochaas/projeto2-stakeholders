@@ -216,8 +216,27 @@ function adicionarScriptNaBiblioteca(){
     });
 }
 
-function checkarUsuarioLogado(){
-    if(localStorage.getItem("idUsuarioLogado")){
+function checkarUsuarioValido(){
+    let url = "http://localhost:3000/usuarios";
+    let id = localStorage.getItem("idUsuarioLogado");
+    let valido = false;
+    $.ajax({
+        type: 'GET',
+        url: url,
+        success: function(data) {
+            for(let usuario of data){
+                if(usuario.id == id){
+                    valido = true;
+                }
+            }
+        },
+        async: false
+    });
+    return valido;
+}
+
+function checkarUsuarioLogado(valido){
+    if (valido) {
         let cadastrarNav = $(".script-header-nav-conteudo-navbar-login");
         cadastrarNav[0].innerHTML = "";
         let a = document.createElement("a");
@@ -254,6 +273,26 @@ function checkarUsuarioLogado(){
     }
 }
 
+function barra_acessibilidade_abrir() {
+    let botao = document.querySelector(".barra-acessibilidade-abrir");
+    let barra = document.querySelectorAll(".barra-acessibilidade ul");
+    botao.addEventListener("click", ()=>{
+        event.preventDefault();
+        barra[0].classList.remove("invisivel");
+        barra[1].classList.remove("invisivel");
+        botao.setAttribute("style","display:none");
+    });
+}
 
-checkarUsuarioLogado();
+function addEventListenerVoltar(){
+    let botaoVoltar = $(".voltar");
+    
+    botaoVoltar[0].addEventListener("click", ()=>{
+        window.history.back();
+    });
+}
+
+addEventListenerVoltar();
+checkarUsuarioLogado(checkarUsuarioValido());
+barra_acessibilidade_abrir();
 carregarScript();

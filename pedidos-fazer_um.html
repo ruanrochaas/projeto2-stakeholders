@@ -7,23 +7,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./Scripts/Bibliotecas/shortcut.js"></script>
     <link rel="stylesheet" href="./Style/pedidos-fazer_um.css">
+    <link rel="icon" type="image/png" href="./Componentes/assets/images/4.png">
     <title>Fazer Pedido</title>
 </head>
 <body>
     <span class="feedback-tela-acessibilidade">Você está na página fazer um pedido.</span>
     <header class="header-fazer-pedido">
 
-        <div class="barra-acessibilidade" style="display:none;"> 
-            <ul id="atalhos">  
-                <li><a href="#iniciodoconteudo">Ir para o conteúdo</a></li>  
-                <li><a href="#busca">Ir para a pesquisa</a></li>  
-                <li><a href="#iniciodorodape">Ir para o rodapé</a></li>  
+        <div class="barra-acessibilidade">
+            <a href="" class="barra-acessibilidade-abrir">Abrir Barra de Acessibilidade</a>
+            <ul class="barra invisivel">  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Ir para o conteúdo</a></li>  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Ir para a pesquisa</a></li>  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Ir para o rodapé</a></li>  
             </ul>  
-            <ul id="botoes">  
-                <li><a href=""> Aumentar letra + </a></li>         
-                <li><a href=""> Diminuir letra - </a></li>         
-                <li><a href="#" id="bt_contraste">Alto contraste</a></li>  
-                <li><a href="mapa.html"> Mapa do site </a></li>  
+            <ul class="barra invisivel">  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();"> Aumentar letra + </a></li>         
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();"> Diminuir letra - </a></li>         
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Alto contraste</a></li>  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();"> Mapa do site </a></li>  
             </ul>
         </div>
         
@@ -38,7 +40,7 @@
             <div class="header-fazer-pedido-nav-conteudo-navbar-pesquisa">
                 <span class="feedback-tela-acessibilidade">Digite em seguida sua dúvida: </span>
                 <input placeholder="Pesquisar" class="pesquisa"> 
-                <button class="botao" onclick="alert('Função ainda não implementada'); event.preventDefault();"> IR </button>
+                <button class="botao" onclick="window.location.href='./pesquisa.html';"> IR </button>
             </div>
                 
             <div class="header-fazer-pedido-nav-conteudo-navbar-login">
@@ -64,27 +66,27 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grupo">
-                <a href="#" class="footer-grupo-titulo" onclick="alert('Função ainda não implementada'); event.preventDefault();">Sobre nós</a>
+                <a class="footer-grupo-titulo">Sobre nós</a>
                 <ul>
-                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Quem somos</a></li>
-                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Identidade visual</a></li>
-                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Parceiros</a></li>
+                    <li><a href="./sobre-nos.html">Quem somos</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Identidade visual</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Parceiros</a></li>
                 </ul>
             </div>
             <div class="footer-grupo">
-                <a href="#" class="footer-grupo-titulo" onclick="alert('Função ainda não implementada'); event.preventDefault();">FAQ</a>
+                <a class="footer-grupo-titulo">FAQ</a>
                 <ul>
-                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">O que é um script?</a></li>
-                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Duvidas frequentes</a></li>
-                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Exibir mais</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">O que é um script?</a></li>
+                    <li><a href="./perguntas-frequentes.html">Duvidas frequentes</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Exibir mais</a></li>
                 </ul>
             </div>
             <div class="footer-grupo">
-                <a href="#" class="footer-grupo-titulo" onclick="alert('Função ainda não implementada'); event.preventDefault();">Contato</a>
+                <a class="footer-grupo-titulo">Contato</a>
                 <ul>
-                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Facebook</a></li>
-                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Instagram</a></li>
-                    <li><a href="#" onclick="alert('Função ainda não implementada'); event.preventDefault();">Email</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Facebook</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Instagram</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Email</a></li>
                 </ul>
             </div>
         </div>
@@ -92,7 +94,8 @@
             <img src="./Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
             <span>©2018 Todos os direitos reservados</span>
         </div>
-        <script src="./Scripts/fazerPedido.js"></script>
+        <span class="feedback-tela-acessibilidade">Você chegou ao final dessa página.</span>
     </footer>
+    <script src="./Scripts/fazerPedido.js"></script>
 </body>
 </html>

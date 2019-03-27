@@ -7,23 +7,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./Scripts/Bibliotecas/shortcut.js"></script>
     <link rel="stylesheet" href="./style/biblioteca.css">
+    <link rel="icon" type="image/png" href="./Componentes/assets/images/4.png">
     <title>Biblioteca</title>
 </head>
 <body>
     <span class="feedback-tela-acessibilidade">Você está na sua biblioteca de scripts.</span>
     <header class="header-biblioteca">
 
-        <div class="barra-acessibilidade" style="display:none;"> 
-            <ul id="atalhos">  
-                <li><a href="#conteudo">Ir para o conteúdo</a></li>  
-                <li><a href="">Ir para a pesquisa</a></li>  
-                <li><a href="">Ir para o rodapé</a></li>  
+        <div class="barra-acessibilidade">
+            <a href="" class="barra-acessibilidade-abrir">Abrir Barra de Acessibilidade</a>
+            <ul class="barra invisivel">  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Ir para o conteúdo</a></li>  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Ir para a pesquisa</a></li>  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Ir para o rodapé</a></li>  
             </ul>  
-            <ul id="botoes">  
-                <li><a href=""> Aumentar letra + </a></li>         
-                <li><a href=""> Diminuir letra - </a></li>         
-                <li><a href="#" id="bt_contraste">Alto contraste</a></li>  
-                <li><a href="mapa.html"> Mapa do site </a></li>  
+            <ul class="barra invisivel">  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();"> Aumentar letra + </a></li>         
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();"> Diminuir letra - </a></li>         
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Alto contraste</a></li>  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();"> Mapa do site </a></li>  
             </ul>
         </div>
         
@@ -38,12 +40,12 @@
             <div class="header-biblioteca-nav-conteudo-navbar-pesquisa">
                 <span class="feedback-tela-acessibilidade">Digite em seguida sua dúvida:</span>
                 <input placeholder="Pesquisar" class="pesquisa"> 
-                <button class="botao"> IR </button>
+                <button class="botao" onclick="window.location.href='./pesquisa.html';"> IR </button>
             </div>
                 
             <div class="header-biblioteca-nav-conteudo-navbar-login">
-                <a href="">Entrar</a>
-                <a href="">Cadastrar-se</a>
+                <a href="./entrar.html">Entrar</a>
+                <a href="./cadastro.html">Cadastrar-se</a>
             </div>
         </nav>
         <div class="biblioteca-header-titulo">
@@ -64,27 +66,27 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grupo">
-                <a href="" class="footer-grupo-titulo" >Sobre nós</a>
+                <a class="footer-grupo-titulo" >Sobre nós</a>
                 <ul>
-                    <li><a href="">Quem somos</a></li>
-                    <li><a href="">Identidade visual</a></li>
-                    <li><a href="">Parceiros</a></li>
+                    <li><a href="./sobre-nos.html">Quem somos</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Identidade visual</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Parceiros</a></li>
                 </ul>
             </div>
             <div class="footer-grupo">
-                <a href="" class="footer-grupo-titulo">FAQ</a>
+                <a class="footer-grupo-titulo">FAQ</a>
                 <ul>
-                    <li><a href="">O que é um script?</a></li>
-                    <li><a href="">Duvidas frequentes</a></li>
-                    <li><a href="">Exibir mais</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">O que é um script?</a></li>
+                    <li><a href="./perguntas-frequentes.html">Duvidas frequentes</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Exibir mais</a></li>
                 </ul>
             </div>
             <div class="footer-grupo">
-                <a href="" class="footer-grupo-titulo">Contato</a>
+                <a class="footer-grupo-titulo">Contato</a>
                 <ul>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Email</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Facebook</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Instagram</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Email</a></li>
                 </ul>
             </div>
         </div>
@@ -92,6 +94,7 @@
             <img src="./Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
             <span>©2018 Todos os direitos reservados</span>
         </div>
+        <span class="feedback-tela-acessibilidade">Você chegou ao final dessa página.</span>
     </footer>
     <script src="./Scripts/biblioteca.js"></script>
 </body>

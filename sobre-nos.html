@@ -4,118 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./Scripts/Bibliotecas/shortcut.js"></script>
+    <link rel="icon" type="image/png" href="./Componentes/assets/images/4.png">
     <link rel="stylesheet" href="./Style/sobre-nos.css">
     <title>Sobre nós</title>
 </head>
 <body>
+    <span class="feedback-tela-acessibilidade">Você está na tela de tutorial.</span>
     <header class="header-sobre-nos">
+
+        <div class="barra-acessibilidade">
+            <a href="" class="barra-acessibilidade-abrir">Abrir Barra de Acessibilidade</a>
+            <ul class="barra invisivel">  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Ir para o conteúdo</a></li>  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Ir para a pesquisa</a></li>  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Ir para o rodapé</a></li>  
+            </ul>  
+            <ul class="barra invisivel">  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();"> Aumentar letra + </a></li>         
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();"> Diminuir letra - </a></li>         
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Alto contraste</a></li>  
+                <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();"> Mapa do site </a></li>  
+            </ul>
+        </div>
+
         <nav class="header-sobre-nos-nav">
-            <a href="./index.html"><img class="header-sobre-nos-nav-logo" src="/Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+            <a href="./index.html"><img class="header-sobre-nos-nav-logo" src="./Componentes/assets/images/Área-de-proteção-horizontal.png"></a>
+            
+            <div class="header-sobre-nos-nav-conteudo-navbar-links">
+                <a href="./explorar.html">Explorar</a>
+                <a href="./pedidos.html">Pedidos</a>
+            </div>
+
+            <div class="header-sobre-nos-nav-conteudo-navbar-pesquisa">
+                <input placeholder="Pesquisar" class="pesquisa"> 
+                <button class="botao" onclick="window.location.href='./pesquisa.html';"> IR </button>
+            </div>
                 
-                <div class="header-sobre-nos-nav-conteudo-navbar-links">
-                    <a href="./explorar.html">Explorar</a>
-                    <a href="./pedidos.html">Pedidos</a>
-                </div>
-    
-                <div class="header-sobre-nos-nav-conteudo-navbar-pesquisa">
-                    <input placeholder="Pesquisar" class="pesquisa"> 
-                    <button class="botao"> IR </button>
-                </div>
-                    
-                <div class="header-sobre-nos-nav-conteudo-navbar-login">
-                <a href="">Entrar</a>
-                <a href="">Cadastrar-se</a>
-    
-                </div>
-            </nav>
-    <div class="header-sobre-nos-titulo">
-        <h2>Sobre Nós</h2>
-        <p>Aqui você saberá um pouco mais da gente</p>
-    </div>
-</header>
-<div class="conteudo">
+            <div class="header-sobre-nos-nav-conteudo-navbar-login">
+                <a href="./entrar.html">Entrar</a>
+                <a href="./cadastro.html">Cadastrar-se</a>
+            </div>
+        </nav>
+        <div class="header-sobre-nos-titulo">
+            <h2>Sobre Nós</h2>
+            <p>Aqui você saberá um pouco mais da gente</p>
+        </div>
+    </header>
+    <div class="conteudo">
         <div class="sobre-nos-card">
-                <div class="sobre-nos-div">
-                        <h3 class="sobre-nos-titulo">
-                            O que é o Stakeholders
-                        </h3>
-                    </div>
-                <div class="sobre-nos-card card-conteudo">
-                    <div class="sobre-nos-card card-conteudo-textos">
-                        <p class="texto-sobre-nos">
-                            O Stakeholders é uma rede colaborativa criada com o intuito de melhorar e facilitar a navegação na web para deficientes visuais, através do uso de scripts de automação para o Google Chrome, composta por pessoas dispostas a ajudar a tornar o mundo virtual acessível para todos.
-                        </p>
-                    </div>
+            <div class="sobre-nos-div">
+                <h3 class="sobre-nos-titulo">
+                    O que é o Stakeholders
+                </h3>
+            </div>
+            <div class="sobre-nos-card card-conteudo">
+                <div class="sobre-nos-card card-conteudo-textos">
+                    <p class="texto-sobre-nos">
+                        O Stakeholders é uma rede colaborativa criada com o intuito de melhorar e facilitar a navegação na web para deficientes visuais, através do uso de scripts de automação para o Google Chrome, composta por pessoas dispostas a ajudar a tornar o mundo virtual acessível para todos.
+                    </p>
                 </div>
             </div>
-            <div class="sobre-nos-card">
-                    <div class="sobre-nos-div">
-                            <h3 class="sobre-nos-titulo">
-                                Como surgimos?
-                            </h3>
-                        </div>
-                    <div class="sobre-nos-card card-conteudo">
-                        <div class="sobre-nos-card card-conteudo-textos">
-                            <p class="texto-sobre-nos">
-                                O projeto Stakeholders foi pensado e elaborado por alunos da Universidade Federal do Ceará onde foi proposto a construção de uma rede colaborativa para melhorar e facilitar a navegação web de deficientes visuais.                            
-                            </p>
-                        </div>
-                    </div>
-            </div>
-            <div class="sobre-nos-card">
-                    <div class="sobre-nos-div">
-                            <h3 class="sobre-nos-titulo">
-                                Quem pode contribuir?
-                            </h3>
-                        </div>
-                    <div class="sobre-nos-card card-conteudo">
-                        <div class="sobre-nos-card card-conteudo-textos">
-                            <p class="texto-sobre-nos">
-                                Qualquer pessoa que possua experiência com programação e deseja ajudar a tornar a web um local mais acessível para deficientes visuais.                            </p>
-                        </div>
-                    </div>
+        </div>
+        <div class="sobre-nos-card">
+            <div class="sobre-nos-div">
+                    <h3 class="sobre-nos-titulo">
+                        Como surgimos?
+                    </h3>
                 </div>
-                <div class="sobre-nos-card">
-                        <div class="sobre-nos-div">
-                                <h3 class="sobre-nos-titulo">
-                                    Valores e Objetivos
-                                </h3>
-                            </div>
-                        <div class="sobre-nos-card card-conteudo">
-                            <div class="sobre-nos-card card-conteudo-textos">
-                                <p class="texto-sobre-nos">
-                                    Nossos valores são: inclusão digital e acessibilidade.
-                                    <br> <br>
-                                    O principal objetivo do Stakeholders é promover a melhor qualidade de vida dos deficientes visuais e a rapidez da navegação.                                </p>
-                            </div>
-                        </div>
-                    </div>
-</div>
+            <div class="sobre-nos-card card-conteudo">
+                <div class="sobre-nos-card card-conteudo-textos">
+                    <p class="texto-sobre-nos">
+                        O projeto Stakeholders foi pensado e elaborado por alunos da Universidade Federal do Ceará onde foi proposto a construção de uma rede colaborativa para melhorar e facilitar a navegação web de deficientes visuais.                            
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sobre-nos-card">
+            <div class="sobre-nos-div">
+                    <h3 class="sobre-nos-titulo">
+                        Quem pode contribuir?
+                    </h3>
+                </div>
+            <div class="sobre-nos-card card-conteudo">
+                <div class="sobre-nos-card card-conteudo-textos">
+                    <p class="texto-sobre-nos">
+                        Qualquer pessoa que possua experiência com programação e deseja ajudar a tornar a web um local mais acessível para deficientes visuais.                            </p>
+                </div>
+            </div>
+        </div>
+        <div class="sobre-nos-card">
+            <div class="sobre-nos-div">
+                    <h3 class="sobre-nos-titulo">
+                        Valores e Objetivos
+                    </h3>
+                </div>
+            <div class="sobre-nos-card card-conteudo">
+                <div class="sobre-nos-card card-conteudo-textos">
+                    <p class="texto-sobre-nos">
+                        Nossos valores são: inclusão digital e acessibilidade.
+                        <br> <br>
+                        O principal objetivo do Stakeholders é promover a melhor qualidade de vida dos deficientes visuais e a rapidez da navegação.                                </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-grupo">
-                <a href="" class="footer-grupo-titulo" >Sobre nós</a>
+                <a class="footer-grupo-titulo" >Sobre nós</a>
                 <ul>
-                    <li><a href="sobre-nos.html">Quem somos</a></li>
+                    <li><a href="./sobre-nos.html">Quem somos</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Identidade visual</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Parceiros</a></li>
                 </ul>
             </div>
             <div class="footer-grupo">
-                <a href="" class="footer-grupo-titulo">FAQ</a>
+                <a class="footer-grupo-titulo">FAQ</a>
                 <ul>
-                    <li><a href="perguntas-frequentes.html">Duvidas frequentes</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">O que é um script?</a></li>
+                    <li><a href="./perguntas-frequentes.html">Duvidas frequentes</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Exibir mais</a></li>
                 </ul>
             </div>
             <div class="footer-grupo">
-                <a href="" class="footer-grupo-titulo">Contato</a>
+                <a class="footer-grupo-titulo">Contato</a>
                 <ul>
-                    <li><a href="">stakeholders@gmail.com</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Facebook</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Instagram</a></li>
+                    <li><a href="" onclick="alert('Função ainda não implementada'); event.preventDefault();">Email</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-logo">
-            <img src="/Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
+            <img src="./Componentes/assets/images/Área-de-proteção-vertical.png" class="footer-coluna2-logo" >
             <span>©2018 Todos os direitos reservados</span>
         </div>
+        <span class="feedback-tela-acessibilidade">Você chegou ao final dessa página.</span>
     </footer>
+    <script src="./Scripts/sobre-nos.js"></script>
 </body>
 </html>

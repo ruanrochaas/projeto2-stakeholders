@@ -205,6 +205,7 @@ button{
     height: 266px;
     background-image: url("../Componentes/assets/images/header3.png");
     align-items: center;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -247,6 +248,7 @@ button{
     background-image: url("../Componentes/assets/images/header.png");
     align-items: center;
     display: flex;
+    background-size: cover;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

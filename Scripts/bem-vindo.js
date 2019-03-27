@@ -56,4 +56,16 @@ function checkarUsuarioLogado(valido){
 }
 
 
+function barra_acessibilidade_abrir() {
+    let botao = document.querySelector(".barra-acessibilidade-abrir");
+    let barra = document.querySelectorAll(".barra-acessibilidade ul");
+    botao.addEventListener("click", ()=>{
+        event.preventDefault();
+        barra[0].classList.remove("invisivel");
+        barra[1].classList.remove("invisivel");
+        botao.setAttribute("style","display:none");
+    });
+}
+
+barra_acessibilidade_abrir();
 checkarUsuarioLogado(checkarUsuarioValido());

@@ -80,6 +80,7 @@ body{
     background-image: url("../Componentes/assets/images/header3.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -331,27 +332,47 @@ body{
     height: 30px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
     list-style-type: none;
     font-family: "Aller-regular";
+    font-weight: 300;
 }
 
-.barra-acessibilidade > ul{
+.barra{
     list-style-type: none;
     display: flex;
-    padding: 85px;
 }
 
-.barra-acessibilidade > ul > li > a{
+.barra > li > a{
     color: rgba(255, 255, 255, .8);
     padding: 5px;
     margin: 10px;
     text-decoration: none;
 }
 
-.barra-acessibilidade > ul > li > a:hover{
+.barra > li > a:hover{
     color: rgba(255, 255, 255, 1);
-    font-weight: 500;
+}
+
+.barra-acessibilidade-abrir{
+    color: rgba(255, 255, 255, .8);
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.barra-acessibilidade-abrir:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.invisivel{
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .script-header-nav, .barra-acessibilidade{
+        width: 1050px;
+    }
 }

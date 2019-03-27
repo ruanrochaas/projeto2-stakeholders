@@ -1,30 +1,3 @@
-function addEventListenerBotoesCont(){
-    let botoesCont = $(".conteudo button");
-
-    botoesCont[0].addEventListener("click", ()=>{
-        window.location.href='./scripts.html';
-    });
-
-    botoesCont[1].addEventListener("click", ()=>{
-        window.location.href='./pedidos.html';
-    });
-
-    botoesCont[2].addEventListener("click", ()=>{
-        //window.location.href='./explorar-desenvolvedores.html';
-        event.preventDefault();
-        alert('Função ainda não implementada');
-    });
-}
-
-function addEventListenerVoltar(){
-    let botaoVoltar = $(".voltar");
-    
-    botaoVoltar[0].addEventListener("click", ()=>{
-        window.history.back();
-    });
-}
-
-
 function checkarUsuarioValido(){
     let url = "http://localhost:3000/usuarios";
     let id = localStorage.getItem("idUsuarioLogado");
@@ -46,7 +19,7 @@ function checkarUsuarioValido(){
 
 function checkarUsuarioLogado(valido){
     if (valido) {
-        let cadastrarNav = $(".header-explorar-nav-conteudo-navbar-login");
+        let cadastrarNav = $(".header-pesquisa-nav-conteudo-navbar-login");
         cadastrarNav[0].innerHTML = "";
         let a = document.createElement("a");
         let a2 = document.createElement("a");
@@ -93,7 +66,14 @@ function barra_acessibilidade_abrir() {
     });
 }
 
-checkarUsuarioLogado(checkarUsuarioValido());
+function addEventListenerVoltar(){
+    let botaoVoltar = $(".voltar");
+    
+    botaoVoltar[0].addEventListener("click", ()=>{
+        window.history.back();
+    });
+}
+
 addEventListenerVoltar();
-addEventListenerBotoesCont();
 barra_acessibilidade_abrir();
+checkarUsuarioLogado(checkarUsuarioValido());

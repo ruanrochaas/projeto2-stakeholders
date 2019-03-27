@@ -69,13 +69,6 @@ body {
   background: #d7d7d7;
 }
 
-body span {
-  display: block;
-  overflow: hidden;
-  max-width: 0;
-  max-height: 0;
-}
-
 .voltar{
     display: block;
     border: 3px solid #232323;
@@ -104,6 +97,7 @@ body button {
   background-image: url("../Componentes/assets/images/header3.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -417,35 +411,62 @@ body button {
   text-align: center;
 }
 
+.feedback-tela-acessibilidade{
+  display: block;
+  float: left;
+  max-width: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
 .barra-acessibilidade{
-    top: 0;
-    position: absolute;
-    background: rgb(70, 70, 70);
-    height: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    list-style-type: none;
-    font-family: "Aller-regular";
-    font-weight: 300;
+  top: 0;
+  position: absolute;
+  background: rgb(70, 70, 70);
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  font-family: "Aller-regular";
+  font-weight: 300;
 }
 
-.barra-acessibilidade > ul{
-    list-style-type: none;
-    display: flex;
-    padding: 85px;
+.barra{
+  list-style-type: none;
+  display: flex;
 }
 
-.barra-acessibilidade > ul > li > a{
-    color: rgba(255, 255, 255, .8);
-    padding: 5px;
-    margin: 10px;
-    text-decoration: none;
+.barra > li > a{
+  color: rgba(255, 255, 255, .8);
+  padding: 5px;
+  margin: 10px;
+  text-decoration: none;
 }
 
-.barra-acessibilidade > ul > li > a:hover{
-    color: rgba(255, 255, 255, 1);
+.barra > li > a:hover{
+  color: rgba(255, 255, 255, 1);
 }
-/*# sourceMappingURL=biblioteca.css.map */
+
+.barra-acessibilidade-abrir{
+  color: rgba(255, 255, 255, .8);
+  padding: 5px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.barra-acessibilidade-abrir:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+.invisivel{
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .header-biblioteca .header-biblioteca-nav, .barra-acessibilidade{
+      width: 1050px;
+  }
+}

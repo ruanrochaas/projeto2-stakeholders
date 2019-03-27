@@ -75,6 +75,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: row;
